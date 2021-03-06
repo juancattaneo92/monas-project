@@ -11,11 +11,18 @@
 
 .nav-bar-container {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--main-black);
+  justify-content: space-evenly;
+  background-color: transparent;
   color: #fff;
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
   padding: 1rem;
+   @media (max-width:768px) {
+        justify-content: space-between;
+    }
   
 
   .logo-text {
@@ -30,8 +37,47 @@
 
   .nav-bar-right {
     @include flexCenter(column);
+    width: 33vw;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-end;
   }
+  .nav-links-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 33vw;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+  font-weight: 100;
+  @media (max-width:768px) {
+        display: none;
+    }
 }
+
+.nav-links{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 1rem;
+  width: max-content;
+  white-space: nowrap;
+  width: fit-content;
+  letter-spacing: .02rem;
+  cursor: pointer;
+  transition: all .35s;
+
+ 
+}
+.nav-bar-left{
+  width: 33vw;
+  @media (max-width:768px) {
+        width: max-content;
+    }
+}
+}
+ .nav-links:hover{
+    transform: translateY(-2px);
+  }
 
 .menu-bars {
   display: none;
@@ -41,9 +87,11 @@
     width: 40px;
     cursor: pointer;
     color: #fff;
-    @include flexCenter(column)
+    @include flexCenter(column);
+    align-self: flex-end;
   
 }
+
   
 }
 

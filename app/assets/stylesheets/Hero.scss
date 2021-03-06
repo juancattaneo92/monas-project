@@ -1,3 +1,11 @@
+:root{
+  --main-orange: #f5971b
+}
+
+*{
+  box-sizing: border-box;
+}
+
 .hero-section {
   width: 100%;
 }
@@ -10,7 +18,7 @@
 
 .image-wrapper {
   width: 100%;
-  position: relative;
+  
 }
 
 .image-wrapper::before {
@@ -20,25 +28,30 @@
   width: 100%;
   position: absolute;
   height: 100%;
-  background: gray;
-  opacity: 0.1;
+  background: black;
+  opacity: 0.2;
 }
 
 .image-slider-container {
   width: 100%;
+  position: relative;
 }
 
 .hero-caption {
   color: white;
   font-family: Montserrat;
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  
 }
 
 .call-to-action {
-  position: absolute;
-  top: 75%;
-  left: 10%;
+      position: absolute;
+    top: 50vh;
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    
 }
 
 .action-button {
@@ -52,8 +65,52 @@
   font-family: Montserrat;
   transition: all 0.35s;
   min-width: fit-content;
+  margin-top: 1rem;
 }
 
 .action-button:hover {
   transform: translateY(-2px);
+}
+
+
+.hero-button-container{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 45vh;
+  
+ 
+}
+
+.hero-button-wrapper{
+   @media only screen and(max-width:329px) {
+    width: min-content;
+  }
+}
+
+.hero-buttons{
+  font-size: 3.5rem;
+  color: white;
+  opacity: .5;
+  cursor: pointer;
+  margin: 5px;
+  transition: all .35s;
+}
+
+.hero-buttons:hover{
+  color: var(--main-orange);
+  opacity: .9;
+}
+
+
+.caption-wrapper{
+  height: fit-content;
+  width: 50vw;
+}
+
+.hero-info{
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 400;
+  margin-top: .5rem;
+  letter-spacing: .02rem;
 }

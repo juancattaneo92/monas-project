@@ -14,6 +14,11 @@ export class NavBar extends Component {
                     
                     <h1 className="logo-text">Mona's Burgers</h1>
                 </div>
+                <div className="nav-links-container">
+                    <h2 className="nav-links">Catering</h2>
+                    <h2 className="nav-links">Menu</h2>
+                    <h2 className="nav-links">About Us</h2>
+                </div>
                 <div className="nav-bar-right">
                     <FaBars className="menu-bars" />
                 </div>
