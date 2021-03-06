@@ -1,0 +1,65 @@
+.hero-section {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.image-wrapper::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: gray;
+  opacity: 0.1;
+}
+
+.image-slider-container {
+  width: 100%;
+}
+
+.hero-caption {
+  color: white;
+  font-family: Montserrat;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.call-to-action {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+.action-button {
+  padding: 0.75rem;
+  width: 10vw;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--main-black);
+  border: none;
+  color: white;
+  font-family: Montserrat;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.action-button:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+/*# sourceMappingURL=Hero.css.map */

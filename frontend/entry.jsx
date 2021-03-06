@@ -23,3 +23,4 @@ document.addEventListener("DOMContentLoaded", () => {
   let store = configureStore(preloadedState);
   ReactDOM.render(<Root store={store} />, root);
 });
+

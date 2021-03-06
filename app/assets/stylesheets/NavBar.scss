@@ -1,0 +1,50 @@
+:root {
+  --main-black: #2c2c2c;
+  --transparent-button-color: #f5f4f4
+}
+
+@mixin flexCenter($direction) {
+  justify-content: center;
+  display: flex;
+  flex-direction: $direction;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-black);
+  color: #fff;
+  
+  padding: 1rem;
+  
+
+  .logo-text {
+    font-family: "Jost";
+    height: fit-content;
+    width: fit-content;
+    font-size: 2rem;
+    @media (max-width:768px) {
+        font-size: 40px;
+    }
+  }
+
+  .nav-bar-right {
+    @include flexCenter(column);
+  }
+}
+
+.menu-bars {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: #fff;
+    @include flexCenter(column)
+  
+}
+  
+}
+
+

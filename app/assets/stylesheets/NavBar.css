@@ -1,0 +1,72 @@
+:root {
+  --main-black: #2c2c2c;
+  --transparent-button-color: #f5f4f4
+;
+}
+
+.nav-bar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--main-black);
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav-bar-container .logo-text {
+  font-family: "Jost";
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-bar-container .logo-text {
+    font-size: 40px;
+  }
+}
+
+.nav-bar-container .nav-bar-right {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-bars {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-bars {
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */

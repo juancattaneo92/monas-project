@@ -1,19 +1,15 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import NavBar from "./NavBar.jsx";
-import { signup } from "../../actions/SessionActions";
-
-
-
+import { connect } from 'react-redux'
+import { signup } from '../../util/SessionApiUtil'
+import NavBar from './NavBar'
 const mapStateToProps = (state) => {
-    return{
-
+    return {
+        currentUserId : state.session.currentUser
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-      signup: (user) => dispatch(signup(user))
+        signup: (user) => dispatch(signup(user))
     }
 }
 
