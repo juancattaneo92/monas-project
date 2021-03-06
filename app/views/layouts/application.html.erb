@@ -6,8 +6,28 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <script type="text/javascript" >
+      window.hero_1_url= "<%= image_url('Hero1.png') %>";
+      window.hero_2_url= "<%= image_url('Hero2.png') %>";
+      window.hero_3_url= "<%= image_url('Hero3.png') %>";
 
+      const MonasData = {
+        hero_1_url: "<%= image_url('Hero1.png') %>",
+        hero_2_url: "<%= image_url('Hero2.png') %>",
+        hero_3_url: "<%= image_url('Hero3.png') %>",
+      }
+
+      console.log("Saved image urls to window");
+    </script>
+    <%= javascript_include_tag 'application' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <%if current_user %>
   <script>
   window.currentUser = {
