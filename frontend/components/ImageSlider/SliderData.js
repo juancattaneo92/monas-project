@@ -3,17 +3,20 @@ const SliderData = [
   {
     imageUrl: window.hero_1_url,
     caption: "A Damn Good Burger",
-    alt: "",
+    info:"All Burgers Are GrassFed",
+    alt: "Mona's Burger",
   },
   {
     imageUrl: window.hero_2_url,
-    caption: "Grassfed Burgers",
-    alt: "",
+    caption: "Burgers",
+    info: "Locally Sourced",
+    alt: "Burgers",
   },
   {
     imageUrl: window.hero_3_url,
     caption: "Salads",
-    alt: ""
+    info: "Fresh Ingredients",
+    alt: "Salad"
   },
 ];
 console.log("Trying to read image urls");
