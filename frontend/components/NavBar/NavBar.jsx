@@ -21,6 +21,7 @@ export class NavBar extends Component {
                 </div>
                 <div className="nav-bar-right">
                     <FaBars className="menu-bars" />
+                    <button className="action-button contact-us">Contact Us</button>
                 </div>
 
             </nav>

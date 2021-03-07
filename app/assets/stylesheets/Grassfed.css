@@ -1,0 +1,139 @@
+.feature-1 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .feature-1 {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.feature-1 .feature-image-container {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .feature-1 .feature-image-container {
+    width: 100vw;
+  }
+}
+
+.feature-1 .feature-1-image {
+  width: inherit;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 1rem;
+  max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .feature-1 .feature-1-image {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.feature-1 .feature-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  background-color: rgba(175, 175, 175, 0.194);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .feature-1 .feature-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.feature-1 .grass-fed-blurb-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .feature-1 .grass-fed-blurb-container {
+    position: absolute;
+    color: whitesmoke;
+    width: 100vw;
+    margin-top: 1.5rem;
+  }
+}
+
+.feature-1 .grass-fed-blurb {
+  font-family: "Montserrat";
+  padding: 1rem;
+  line-height: 1.75rem;
+  width: 35vw;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .feature-1 .grass-fed-blurb {
+    width: 100vw;
+  }
+}
+
+.feature-1 .feature-title {
+  font-family: var(--styled-font);
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.feature-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  z-index: -1;
+}
+/*# sourceMappingURL=Grassfed.css.map */
