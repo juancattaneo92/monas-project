@@ -1,6 +1,9 @@
 :root {
   --main-black: #2c2c2c;
-  --transparent-button-color: #f5f4f4
+  --transparent-button-color: #f5f4f4;
+  --styled-font: Jost;
+  --functional-font: Montserrat;
+  --mobile-break-point: 768px;
 }
 
 @mixin flexCenter($direction) {
@@ -20,6 +23,8 @@
   z-index: 5;
   width: 100%;
   padding: 1rem;
+  align-items: baseline;
+  flex-direction: row;
    @media (max-width:768px) {
         justify-content: space-between;
     }
@@ -36,10 +41,11 @@
   }
 
   .nav-bar-right {
-    @include flexCenter(column);
+    
     width: 33vw;
     align-items: center;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
   }
   .nav-links-container{
@@ -53,11 +59,13 @@
   @media (max-width:768px) {
         display: none;
     }
+
+    
 }
 
 .nav-links{
   display: flex;
-  flex-direction: column-reverse;
+  justify-self: center;
   margin-right: 1rem;
   width: max-content;
   white-space: nowrap;
@@ -96,3 +104,8 @@
 }
 
 
+.contact-us{
+      @media (max-width:768px) {
+        display: none;
+      }
+    }

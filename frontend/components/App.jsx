@@ -3,7 +3,8 @@ import { Route, Switch, Link, Redirect } from 'react-router-dom';
 import NavBarContainer from './NavBar/NavBarContainer';
 import SignUpForm from "./Session/SignUpFormContainer"
 import SliderData from "./ImageSlider/SliderData.js"
-import ImageSlider from "./ImageSlider/ImageSlider"
+import Grassfed from "./Grassfed/Grassfed"
+
 import Hero from "./Hero/Hero"
 
 const App = () => (
@@ -12,6 +13,7 @@ const App = () => (
     <NavBarContainer />
     
     <Hero slides={SliderData} />
+    <Grassfed />
     
     
     {/* <Switch>
