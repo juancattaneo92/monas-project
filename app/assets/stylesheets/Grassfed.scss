@@ -38,6 +38,9 @@
              max-width: 100%;
              padding: 0;
             width: 100%;
+            display: none;
+            visibility: hidden;
+            
         }
     }
 
@@ -60,11 +63,15 @@
         @include flexCenter(column);
         width:50vw;
         align-items: center;
+        z-index: 5;
         @media (max-width: 768px) {
             position: absolute;
             color: whitesmoke;
             width: 100vw;
             margin-top: 1.5rem;
+            z-index: 5;
+            
+            
         }
     }
 
@@ -76,6 +83,7 @@
         text-align: center;
         @media (max-width: 768px) {
             width: 100vw;
+            
         }
     }
 
