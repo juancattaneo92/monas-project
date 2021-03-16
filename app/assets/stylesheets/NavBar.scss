@@ -102,6 +102,10 @@
 
   
 }
+.nav-bar-container.active{
+  background-color: var(--main-orange);
+  position: fixed;
+}
 
 
 .contact-us{
@@ -109,3 +113,5 @@
         display: none;
       }
     }
+
+

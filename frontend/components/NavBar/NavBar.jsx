@@ -5,7 +5,26 @@ import {FaBars }from "react-icons/Fa"
 export class NavBar extends Component {
     constructor(props) { 
         super(props)
+        this.handleScroll = this.handleScroll.bind(this)
     }
+
+    componentDidMount() { 
+        window.addEventListener("scroll", this.handleScroll)
+    }
+
+    componentWillUnmount() { 
+         window.removeEventListener("scroll", this.handleScroll);
+    }
+    handleScroll() { 
+        if (window.scrollY > 20) { 
+            document.querySelector(".nav-bar-container").style.backgroundColor = "#f5971b"
+            document.querySelector(".nav-bar-container").style.position = "fixed"
+        }else {
+            document.querySelector(".nav-bar-container").style.backgroundColor = "transparent"
+            document.querySelector(".nav-bar-container").style.position = "absolute"
+    }
+    }
+
 
     render() {
         return (
