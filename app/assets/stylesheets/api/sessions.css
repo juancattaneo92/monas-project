@@ -1,1 +1,73 @@
 /* No CSS *//*# sourceMappingURL=sessions.css.map */
+
+.session-form-wrapper{
+  /* margin-top: 200px; */
+}
+
+.modal-background{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    font-family: "Montserrat";
+}
+
+.session-container{
+    background-color: whitesmoke;
+    /* border-radius: 30px; */
+    width: 20em;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.field{
+    height: 35px;
+    width: 250px;
+    margin-bottom: 0.2em;
+}
+
+.session-container > h2{
+    margin: 2em;
+}
+
+.change-form{
+    margin-top: 10px;
+}
+.session{
+  margin-left: 0.5em;
+}
+
+.close-x{
+    font-size: 28px;
+    color: white;
+    width: 55px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 0;
+    /* font-weight: 300; */
+    align-items: center;
+}
+.close-x:hover,
+.close-x:focus {
+    cursor: pointer;
+    color: var(--main-orange);
+    /* border-radius: 30px; */
+}
+
+.session-title{
+  font-family: "Jost";
+  font-size: 2rem;
+}
