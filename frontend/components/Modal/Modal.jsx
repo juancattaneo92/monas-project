@@ -22,8 +22,8 @@ function Modal({ modal, closeModal }) {
       return null;
   }
   return (
-    <div onClick={closeModal}>
-      <div className="" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-background" onClick={closeModal}>
+      <div className="modal-box" onClick={(e) => e.stopPropagation()}>
         {component}
       </div>
     </div>
