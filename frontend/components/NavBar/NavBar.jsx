@@ -6,7 +6,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
     const logginIn = () => {
         return(
             <div className="">
-                <button className="" onClick={() => openModal('signin')}>Sign in</button>
+                <button className="action-button session" onClick={() => openModal('signin')}>Sign in</button>
             </div>
     )};
     
@@ -14,7 +14,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
         return(
             <div className="">
                 <div className="">
-                    <button className="" onClick={logout}>Sign out</button>
+                    <button className="action-button session" onClick={logout}>Sign out</button>
                 </div>
             </div>
     )};
@@ -33,7 +33,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                 <div className="nav-bar-right">
                     <FaBars className="menu-bars" />
                     <button className="action-button contact-us">Contact Us</button>
-                    <button className="action-button contact-us">{currentUser ? loggingOut(currentUser, logout) : logginIn()}</button>
+                    <div className="" >{currentUser ? loggingOut(currentUser, logout) : logginIn()}</div>
                 </div>
 
             </nav>

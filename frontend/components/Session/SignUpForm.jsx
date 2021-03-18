@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class SignUpForm extends Component {
     constructor(props) {
         super(props);
@@ -45,25 +46,29 @@ class SignUpForm extends Component {
         return (
             <div className="session-form-wrapper">
                 <div className="close-x" onClick={this.props.closeModal}>x</div>
-                <form onSubmit={this.handleSubmit} >
+                <form className="session-container" onSubmit={this.handleSubmit} >
                     <div>
-                        <h2 className="">{this.props.formType}</h2>
-                        <h2 className="">{this.props.otherForm}</h2>
+                        <h2 className="session-title">{this.props.formType}</h2>
                     </div>
                     <div>
                         <br/>
-                            <input className="" type="text" onChange={this.handleChange("name")} value={this.state.name} onChange={this.handleChange('name')} placeholder="Name" />
+                        <input className="field" type="text" onChange={this.handleChange("name")} value={this.state.name} onChange={this.handleChange('name')} placeholder="Name" />
 
                         <br />
-                            <input className="" type="text" onChange={this.handleChange("phone")} value={this.state.phone} onChange={this.handleChange('phone')} placeholder="Phone" />
+                        <input className="field" type="text" onChange={this.handleChange("phone")} value={this.state.phone} onChange={this.handleChange('phone')} placeholder="Phone" />
 
                         <br />
-                            <input className="" type="text" onChange={this.handleChange("email")} value={this.state.email} onChange={this.handleChange('email')} placeholder="Email" />
+                        <input className="field" type="text" onChange={this.handleChange("email")} value={this.state.email} onChange={this.handleChange('email')} placeholder="Email" />
 
                         <br />
-                            <input className="" type="password" onChange={this.handleChange("password")} value={this.state.password} onChange={this.handleChange('password')} placeholder="Password" />
-                        <button className="" type="submit" value={this.props.formType}>{this.props.formType}</button>
+                        <input className="field" type="password" onChange={this.handleChange("password")} value={this.state.password} onChange={this.handleChange('password')} placeholder="Password" />
+                            <br/>
+                        <button className="action-button" type="submit" value={this.props.formType}>{this.props.formType}</button>
                         {/* <div className="" >{this.renderErrors()}</div> */}
+                        <br />
+                        <h2 className="change-form"> Already have an account? 
+                        <a >{this.props.otherForm}</a>
+                        </h2>
                     </div>
                 </form>
             </div>

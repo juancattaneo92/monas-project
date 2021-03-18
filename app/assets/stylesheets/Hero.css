@@ -127,3 +127,10 @@
   letter-spacing: .02rem;
 }
 /*# sourceMappingURL=Hero.css.map */
+.session-link{
+  color: var(--main-orange);
+  margin-left: 0.2em;
+}
+.session-link:hover{
+  cursor: pointer;
+}
