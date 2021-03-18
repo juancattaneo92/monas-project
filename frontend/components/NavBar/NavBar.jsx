@@ -14,7 +14,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
         return(
             <div className="">
                 <div className="">
-                    <button className="" onClick={this.props.logout}>Sign out</button>
+                    <button className="" onClick={logout}>Sign out</button>
                 </div>
             </div>
     )};

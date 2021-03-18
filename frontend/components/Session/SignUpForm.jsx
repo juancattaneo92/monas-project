@@ -43,7 +43,7 @@ class SignUpForm extends Component {
 
     render() {
         return (
-            <div>
+            <div className="session-form-wrapper">
                 <div className="close-x" onClick={this.props.closeModal}>x</div>
                 <form onSubmit={this.handleSubmit} >
                     <div>
@@ -51,22 +51,17 @@ class SignUpForm extends Component {
                         <h2 className="">{this.props.otherForm}</h2>
                     </div>
                     <div>
-                        <label>Name
                         <br/>
                             <input className="" type="text" onChange={this.handleChange("name")} value={this.state.name} onChange={this.handleChange('name')} placeholder="Name" />
-                        </label>
-                        <label>Phone
+
                         <br />
                             <input className="" type="text" onChange={this.handleChange("phone")} value={this.state.phone} onChange={this.handleChange('phone')} placeholder="Phone" />
-                        </label>
-                        <label>Email
+
                         <br />
-                            <input className="" type="text" onChange={this.handleChange("email")} value={this.state.email} onChange={this.handleChange('email')} placeholder="Name" />
-                        </label>
-                        <label>Password
+                            <input className="" type="text" onChange={this.handleChange("email")} value={this.state.email} onChange={this.handleChange('email')} placeholder="Email" />
+
                         <br />
-                            <input className="" type="password" onChange={this.handleChange("password")} value={this.state.password} onChange={this.handleChange('password')} placeholder="Name" />
-                        </label>
+                            <input className="" type="password" onChange={this.handleChange("password")} value={this.state.password} onChange={this.handleChange('password')} placeholder="Password" />
                         <button className="" type="submit" value={this.props.formType}>{this.props.formType}</button>
                         {/* <div className="" >{this.renderErrors()}</div> */}
                     </div>

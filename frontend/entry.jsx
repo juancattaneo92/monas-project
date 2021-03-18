@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.currentUser) {
     preloadedState = {
       entities: {
-        users: {
+        user: {
           [window.currentUser.id]: window.currentUser
         }
       },
