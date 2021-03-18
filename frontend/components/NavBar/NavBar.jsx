@@ -3,6 +3,31 @@ import {FaBars }from "react-icons/Fa"
 
 const NavBar = ({ currentUser, logout, openModal }) => {
 
+export class NavBar extends Component {
+    constructor(props) { 
+        super(props)
+        this.handleScroll = this.handleScroll.bind(this)
+    }
+
+    componentDidMount() { 
+        window.addEventListener("scroll", this.handleScroll)
+    }
+
+    componentWillUnmount() { 
+         window.removeEventListener("scroll", this.handleScroll);
+    }
+    handleScroll() { 
+        if (window.scrollY > 20) { 
+            document.querySelector(".nav-bar-container").style.backgroundColor = "#f5971b"
+            document.querySelector(".nav-bar-container").style.position = "fixed"
+        }else {
+            document.querySelector(".nav-bar-container").style.backgroundColor = "transparent"
+            document.querySelector(".nav-bar-container").style.position = "absolute"
+    }
+    }
+
+
+    render() {
     const logginIn = () => {
         return(
             <div className="">
@@ -18,7 +43,6 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                 </div>
             </div>
     )};
-
         return (
             <nav className="nav-bar-container">
                 <div className="nav-bar-left">
