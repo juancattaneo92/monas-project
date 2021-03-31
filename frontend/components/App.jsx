@@ -8,6 +8,7 @@ import AOS from "aos"
 // import 'aos/dist/aos.css'
 import Hero from "./Hero/Hero"
 import Modal from "./Modal/Modal"
+import About from "./About/About"
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     
     <Hero slides={SliderData} />
     <Grassfed />
-    
+    <About />
     
     {/* <Switch>
       <Redirect to="/"  />
