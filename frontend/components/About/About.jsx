@@ -13,7 +13,7 @@ export class About extends Component {
                         <img data-aos='zoom-in' data-aos-duration='500' className="feature-2-image" src={window.mugshot} alt="" />
                     </div>
                     <div data-aos='zoom-in' data-aos-duration='500' className="grass-fed-blurb-container">
-                        <h2 className="feature-title">About</h2>
+                        <h2 className="feature-title">Our Story</h2>
                         <p className="grass-fed-blurb" >
 
                             Opened in July 2014 in Walnut Creek, California, Mona's Burgers has developed quite the reputation for its unique combination of gourmet burgers and specialty shakes. We hand-select all of our wines and beers and test every combination to bring you the perfectly crafted mouth watering burgers you've come to expect at Mona's. <br/>
