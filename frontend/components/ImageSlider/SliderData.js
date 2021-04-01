@@ -21,7 +21,7 @@ const SliderData = [
   {
     imageUrl: window.hero_7_url,
     caption: "Crispy Fries",
-    info: "Fresh Ingredients",
+    info: "Homemade Sauces",
     alt: "Sides"
   },
   {
