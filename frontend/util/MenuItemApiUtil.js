@@ -1,12 +1,12 @@
 export const fetchMenuItems = () => {
   return $.ajax({
-    url: 'api/products',
+    url: 'api/menu_items',
     method: 'GET',
   })
 }
-export const fetchProduct = (productId) => {
+export const fetchMenuItem = (menuItemId) => {
   return $.ajax({
-    url: `api/products/${productId}`,
+    url: `api/menu_items/${menuItemId}`,
     method: 'GET',
   })
 }
