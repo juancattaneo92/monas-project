@@ -1,0 +1,1 @@
+json.extract! @menu_item, :id, :name, :description, :price, :ingredients, :size
