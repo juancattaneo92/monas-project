@@ -7,28 +7,22 @@ const SliderData = [
     alt: "Mona's Burger",
   },
   {
-    imageUrl: window.hero_1_url,
-    caption: "Un-Burgers",
-    info: "Locally Sourced",
-    alt: "Sandwiches",
-  },
-  {
     imageUrl: window.hero_4_url,
     caption: "Salads",
     info: "Fresh Ingredients",
     alt: "Salad"
   },
   {
-    imageUrl: window.hero_7_url,
-    caption: "Crispy Fries",
-    info: "Homemade Sauces",
-    alt: "Sides"
-  },
-  {
     imageUrl: window.hero_8_url,
     caption: "Beers",
-    info: "Hand Picked",
+    info: "Hand Selected",
     alt: "Beers"
+  },
+  {
+    imageUrl: window.hero_1_url,
+    caption: "Un-Burgers",
+    info: "Sandwiches, Locally Sourced",
+    alt: "Sandwiches",
   },
 ];
 console.log("Trying to read image urls");
