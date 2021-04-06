@@ -12,6 +12,12 @@ import About from "./About/About"
 
 
 function App() {
+
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`App is running on port ${PORT}`);
+  });
+
   useEffect(() => { 
     AOS.init({});
   }, [])
