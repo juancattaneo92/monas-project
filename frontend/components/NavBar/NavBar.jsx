@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import {FaBars }from "react-icons/Fa"
+// import {FaBars }from "react-icons/Fa"
+import {FaBars }from "react-icons/fa"
 
 const NavBar = ({ currentUser, logout, openModal }) => {
 
