@@ -10,15 +10,12 @@
     display: flex;
     position: relative;
 
-    
-    
     @include flexCenter(column);
      @media (max-width: 768px) {
             position: relative;
             height: 100%;
         }
     
-
     .feature-image-container{
         width: 50vw;
         display: flex;
@@ -39,8 +36,7 @@
              padding: 0;
             width: 100%;
             display: none;
-            visibility: hidden;
-            
+            visibility: hidden;       
         }
     }
 
