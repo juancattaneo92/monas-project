@@ -9,6 +9,8 @@ import AOS from "aos"
 import Hero from "./Hero/Hero"
 import Modal from "./Modal/Modal"
 import About from "./About/About"
+import MenuItemIndex from "./MenuItem/MenuItemIndex"
+import MenuItemShow from './MenuItem/MenuItemShow'
 
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
     <div>
     <Modal />
     <NavBarContainer />
-    
+    <MenuItemIndex menuItems={menuItems} />
+    <MenuItemShow />
     <Hero slides={SliderData} />
     <Grassfed />
     <About />
