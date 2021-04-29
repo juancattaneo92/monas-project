@@ -24,6 +24,6 @@ export const fetchMenuItems = () => (dispatch) => {
 }
 
 export const fetchMenuItem = (menuItemId) => (dispatch) => {
-  return MenuItemAPIUtil.fetchProduct(menuItemId)
-  .then( result => dispatch(receiveProduct(result)))
+  return MenuItemAPIUtil.fetchMenuItem(menuItemId)
+  .then( result => dispatch(receiveMenuItem(result)))
 };

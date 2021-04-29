@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import {FaBars }from "react-icons/Fa"
+import { Link } from 'react-router-dom'
 
 const NavBar = ({ currentUser, logout, openModal }) => {
 
@@ -41,7 +42,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                 </div>
                 <div className="nav-links-container">
                     <h2 className="nav-links">Catering</h2>
-                    <h2 className="nav-links">Menu</h2>
+                    <Link to="/menu-items" className="nav-links" >Menu</Link>
                     <h2 className="nav-links">About Us</h2>
                 </div>
                 <div className="nav-bar-right">

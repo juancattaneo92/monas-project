@@ -1,23 +1,21 @@
-import React, { useState } from 'react'
-import { fetchMenuItems } from '../../actions/MenuItemActions'
+import React, { useState, useEffect } from 'react'
+// import { fetchMenuItems } from '../../actions/MenuItemActions'
+import { fetchMenuItems } from '../../util/MenuItemApiUtil'
 
-export default function MenuItemIndex(){
-  const [menuItems, setMenuItems] = useState([])
+export default function MenuItemIndex(props){
+  const [menuItems, setMenuItems] = useState();
   
   useEffect(() => {
-    let mounted = true
-    fetchMenuItems()
-      .then(items => {
-        if(mounted) {
-          setMenuItems(items)
-        }
+    items.then(menuItems => {
+      let items = fetchMenuItems(menuItems)
+        setMenuItems(items)
       })
-    return () => mounted = false 
-  }, [])
+  }, [menuItems])
 
   return(
     <div className="menu-index-section">
       <div className="wrapper-menu-index">
+
         {menuItems.map(item=> <li key={item.id}>{item.name}</li>)}
       </div>
     </div>
