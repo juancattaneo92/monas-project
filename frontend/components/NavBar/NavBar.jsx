@@ -10,7 +10,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
             document.querySelector(".nav-bar-container").style.position = "fixed"
             document.querySelector(".nav-bar-container").style.color = "#f5f4f4"
         } else {
-            document.querySelector(".nav-bar-container").style.backgroundColor = "black"
+            document.querySelector(".nav-bar-container").style.backgroundColor = "rgb(255 255 255 / 49%)"
             document.querySelector(".nav-bar-container").style.position = "absolute"
             document.querySelector(".nav-bar-container").style.color = "#f5f4f4"
         }

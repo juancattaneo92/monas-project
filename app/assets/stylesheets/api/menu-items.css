@@ -1,0 +1,57 @@
+:root {
+  --main-black: #2c2c2c;
+  --transparent-button-color: #f5f4f4;
+  --styled-font: Jost;
+  --functional-font: Montserrat;
+  --mobile-break-point: 768px;
+}
+
+.menu-index-section{
+  max-width: 1170px;
+  margin: 10rem 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-family: "Montserrat";
+}
+.wrapper-menu-index{
+    width: 60vw;
+}
+
+.shopping-cart-index{
+  width: 30vw;
+  
+
+}
+
+
+@media screen and (min-width:768px){
+  .menu-index-section{
+    /* grid-template-rows: repeat(1, 1fr); */
+    align-items: start; 
+  }
+}
+
+.menu-item-index{
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  border: 0.1em dotted black;
+}
+
+img{
+  width: 10em;
+}
+
+.menu-details{
+  margin: 2rem;
+}
+
+.menu-details li{
+  margin: 1em;
+}
+
+.current-order-title{
+  display: flex;
+  color: #2c2c2c;
+}

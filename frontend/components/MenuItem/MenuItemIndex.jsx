@@ -19,21 +19,28 @@ export default function MenuItemIndex(){
  
 
   return(
-    <div className="menu-index-section">
+    <section className="menu-index-section">
       <div className="wrapper-menu-index">
       
         {items.map(item => {
           return (
-            <div key={item.id}>
-                {item.name}
-                {item.description}
-                {item.price}
-            </div>
+            <ul className="menu-item-index" key={item.id}>
+                <div>
+                  <img src={'https://happilyunprocessed.com/wp-content/uploads/2018/03/Juicest-Burger-Everfeature.jpg.jpg'} alt=""/>
+                </div>
+                <div className="menu-details">
+                  <li>{item.name}</li>
+                  <li>{item.description}</li>
+                  <li>$ {item.price}</li>
+                </div>
+            </ul>
           )
         })}
-      {/* {items.name} */}
         
       </div>
-    </div>
+      <div className="shopping-cart-index">
+          <h1 className="current-order-title">Current Order</h1>
+      </div>
+    </section>
   )
 }
