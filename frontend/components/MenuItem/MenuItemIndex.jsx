@@ -10,7 +10,6 @@ export default function MenuItemIndex(){
       const response = await fetch('api/menu_items')
       const items = await response.json()
         setItems(items)
-        console.log(items)
     }
 
     useEffect(()=>{

@@ -8,9 +8,11 @@ const NavBar = ({ currentUser, logout, openModal }) => {
         if (window.scrollY > 20) {
             document.querySelector(".nav-bar-container").style.backgroundColor = "#f5971b"
             document.querySelector(".nav-bar-container").style.position = "fixed"
+            document.querySelector(".nav-bar-container").style.color = "#f5f4f4"
         } else {
-            document.querySelector(".nav-bar-container").style.backgroundColor = "transparent"
+            document.querySelector(".nav-bar-container").style.backgroundColor = "black"
             document.querySelector(".nav-bar-container").style.position = "absolute"
+            document.querySelector(".nav-bar-container").style.color = "#f5f4f4"
         }
     }
 
@@ -38,12 +40,12 @@ const NavBar = ({ currentUser, logout, openModal }) => {
             <nav className="nav-bar-container">
                 <div className="nav-bar-left">
                     
-                    <h1 className="logo-text">Mona's Burgers</h1>
+                    <Link to='/' className="logo-text">Mona's Burgers</Link>
                 </div>
                 <div className="nav-links-container">
-                    <h2 className="nav-links">Catering</h2>
+                    <Link to='/' className="nav-links">Catering</Link>
                     <Link to="/menu-items" className="nav-links" >Menu</Link>
-                    <h2 className="nav-links">About Us</h2>
+                    <Link to='/' className="nav-links">About Us</Link>
                 </div>
                 <div className="nav-bar-right">
                     <FaBars className="menu-bars" />
