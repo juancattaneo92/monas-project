@@ -1,4 +1,4 @@
-import React ,{ useEffect} from 'react';
+import React , {useEffect} from 'react';
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import NavBarContainer from './NavBar/NavBarContainer';
 import SignUpForm from "./Session/SignUpFormContainer"
@@ -10,7 +10,6 @@ import Hero from "./Hero/Hero"
 import Modal from "./Modal/Modal"
 import About from "./About/About"
 import MenuItemIndex from "./MenuItem/MenuItemIndex"
-
 // import MenuItemShow from './MenuItem/MenuItemShow'
 // import { fetchMenuItems } from './../actions/MenuItemActions'
 

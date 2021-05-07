@@ -1,25 +1,38 @@
 import React, { useState, useEffect } from 'react'
-import { fetchMenuItems } from '../../actions/MenuItemActions'
-// import { fetchMenuItems } from '../../util/MenuItemApiUtil'
+// import { fetchMenuItems } from '../../actions/MenuItemActions'
+import { fetchMenuItems } from '../../util/MenuItemApiUtil'
 
 
-export default function MenuItemIndex( props ){
-  const [menuItems, setMenuItems] = useState();
-  const[isLoading] = useState(true)
-  
-  useEffect(() => {
-    fetchMenuItems()
-    console.log("working")
+export default function MenuItemIndex(){
+  const [items, setItems] = useState([]);
+
+    const getItems = async () => {
+      const response = await fetch('api/menu_items')
+      const items = await response.json()
+        setItems(items)
+        console.log(items)
+    }
+
+    useEffect(()=>{
+      getItems()
     }, [])
 
+ 
 
   return(
     <div className="menu-index-section">
       <div className="wrapper-menu-index">
-        {/* { menuItems.map(item => {
-          item.name
-        }) */}
-
+      
+        {items.map(item => {
+          return (
+            <div key={item.id}>
+                {item.name}
+                {item.description}
+                {item.price}
+            </div>
+          )
+        })}
+      {/* {items.name} */}
         
       </div>
     </div>
