@@ -14,6 +14,9 @@ import MenuItemIndex from "./MenuItem/MenuItemIndex"
 // import { fetchMenuItems } from './../actions/MenuItemActions'
 
 function App() {
+
+  // const port = process.env.PORT || 5000;
+
   useEffect(() => { 
     AOS.init({});
   }, [])

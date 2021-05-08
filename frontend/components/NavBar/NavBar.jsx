@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import {FaBars }from "react-icons/Fa"
 import { Link } from 'react-router-dom'
 
+
 const NavBar = ({ currentUser, logout, openModal }) => {
 
     const handleScroll = () => {
