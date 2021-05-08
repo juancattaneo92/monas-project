@@ -12,5 +12,5 @@
 # end
 
 json.array! @menu_items do |menu_item|
-        json.extract! menu_item, :id, :name, :description, :price, :ingredients, :size
+        json.extract! menu_item, :id, :name, :description, :price, :ingredients, :size, :category
 end
