@@ -44,9 +44,9 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                     <Link to='/' className="logo-text">Mona's Burgers</Link>
                 </div>
                 <div className="nav-links-container">
-                    <Link to='/' className="nav-links">Catering</Link>
-                    <Link to="/menu-items" className="nav-links" >Menu</Link>
-                    <Link to='/' className="nav-links">About Us</Link>
+                    <Link to='/catering' className="nav-links">Catering</Link>
+                    <Link to="/menu-items" className="nav-links" >Order Now</Link>
+                    <Link to='/locations' className="nav-links">Locations</Link>
                 </div>
                 <div className="nav-bar-right">
                     <FaBars className="menu-bars" />
