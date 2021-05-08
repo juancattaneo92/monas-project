@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// import { fetchMenuItems } from '../../actions/MenuItemActions'
-import { fetchMenuItems } from '../../util/MenuItemApiUtil'
-
 
 export default function MenuItemIndex(){
   const [items, setItems] = useState([]);
@@ -16,31 +13,35 @@ export default function MenuItemIndex(){
       getItems()
     }, [])
 
- 
+  // const categories = [Burgers, Salads, Starters, Fries, Un-Burgers, Beverages, Sides]
 
   return(
-    <section className="menu-index-section">
-      <div className="wrapper-menu-index">
-      
-        {items.map(item => {
-          return (
-            <ul className="menu-item-index" key={item.id}>
-                <div>
+    <div>
+      <div></div>
+      <section className="menu-index-section">
+        <div className="wrapper-menu-index">
+          {items.map(item => {
+            return (
+              <ul className="menu-item-index" key={item.id}>
                   <img src={'https://happilyunprocessed.com/wp-content/uploads/2018/03/Juicest-Burger-Everfeature.jpg.jpg'} alt=""/>
-                </div>
-                <div className="menu-details">
-                  <li>{item.name}</li>
-                  <li>{item.description}</li>
-                  <li>$ {item.price}</li>
-                </div>
-            </ul>
-          )
-        })}
-        
-      </div>
-      <div className="shopping-cart-index">
-          <h1 className="current-order-title">Current Order</h1>
-      </div>
-    </section>
+                  <div className="menu-details">
+                    <div className="menu-name">
+                      <li>{item.name}</li>
+                      <li>$ {item.price}</li>
+                    </div>
+                    <li>{item.description}</li>
+                    <button className='action-button menu-items'>Take me Home</button>
+                  </div>
+              </ul>
+            )
+          })}
+          
+        </div>
+        <div className="divider"></div>
+        <div className="shopping-cart-index">
+            <h1 className="current-order-title">Ready To Order?</h1>
+        </div>
+      </section>
+    </div>
   )
 }

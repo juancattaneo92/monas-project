@@ -7,11 +7,12 @@
 }
 
 .menu-index-section{
-  max-width: 1170px;
-  margin: 10rem 3rem;
+  width: 90vw;
+  /* max-width: 1170px; */
+  margin: 10rem 1rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   font-family: "Montserrat";
 }
 .wrapper-menu-index{
@@ -19,16 +20,19 @@
 }
 
 .shopping-cart-index{
-  width: 30vw;
+  width: 20vw;
   
-
 }
 
+.menu-name{
+  display: flex;
+  flex-direction: row;
+}
 
 @media screen and (min-width:768px){
   .menu-index-section{
     /* grid-template-rows: repeat(1, 1fr); */
-    align-items: start; 
+    /* align-items: start;  */
   }
 }
 
@@ -37,6 +41,7 @@
   flex-direction: row;
   margin: 1em;
   border: 0.1em dotted black;
+  font-size: 1.2rem;
 }
 
 img{
@@ -54,4 +59,16 @@ img{
 .current-order-title{
   display: flex;
   color: #2c2c2c;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.4rem;
+  border-bottom: #2c2c2c;
+}
+
+.divider{
+  height: 100vh;
+  border: 1px dotted #2c2c2c;
+}
+.action-button, .menu-items{
+    margin: 1rem;
 }

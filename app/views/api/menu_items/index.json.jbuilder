@@ -14,3 +14,14 @@
 json.array! @menu_items do |menu_item|
         json.extract! menu_item, :id, :name, :description, :price, :ingredients, :size, :category
 end
+
+# [
+# {
+#    id:
+#    name:
+#    descriptipm:
+#    price:
+#    ing:
+#    size:
+#    category:
+# }]
