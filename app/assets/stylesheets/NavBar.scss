@@ -5,6 +5,9 @@
   --functional-font: Montserrat;
   --mobile-break-point: 768px;
 }
+*{
+  outline: none !important;
+}
 
 @mixin flexCenter($direction) {
   justify-content: center;
@@ -73,7 +76,7 @@
   letter-spacing: .02rem;
   cursor: pointer;
   transition: all .35s;
-
+  border-style: none;
  
 }
 .nav-bar-left{
@@ -86,6 +89,7 @@
  .nav-links:hover{
     transform: translateY(-2px);
   }
+
 
 .menu-bars {
   display: none;

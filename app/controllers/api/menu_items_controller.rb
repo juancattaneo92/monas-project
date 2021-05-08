@@ -37,7 +37,7 @@ class Api::MenuItemsController < ApplicationController
 
   private
   def menu_item_params
-    params.require(:menu_item).permit(:id, :name, :description, :price, :ingredients, :size)
+    params.require(:menu_item).permit(:id, :name, :description, :price, :ingredients, :size, :category)
   end
 
 end

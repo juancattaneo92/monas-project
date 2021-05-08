@@ -1,0 +1,74 @@
+:root {
+  --main-black: #2c2c2c;
+  --transparent-button-color: #f5f4f4;
+  --styled-font: Jost;
+  --functional-font: Montserrat;
+  --mobile-break-point: 768px;
+}
+
+.menu-index-section{
+  width: 90vw;
+  /* max-width: 1170px; */
+  margin: 10rem 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: "Montserrat";
+}
+.wrapper-menu-index{
+    width: 60vw;
+}
+
+.shopping-cart-index{
+  width: 20vw;
+  
+}
+
+.menu-name{
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width:768px){
+  .menu-index-section{
+    /* grid-template-rows: repeat(1, 1fr); */
+    /* align-items: start;  */
+  }
+}
+
+.menu-item-index{
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  border: 0.1em dotted black;
+  font-size: 1.2rem;
+}
+
+img{
+  width: 10em;
+}
+
+.menu-details{
+  margin: 2rem;
+}
+
+.menu-details li{
+  margin: 1em;
+}
+
+.current-order-title{
+  display: flex;
+  color: #2c2c2c;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.4rem;
+  border-bottom: #2c2c2c;
+}
+
+.divider{
+  height: 100vh;
+  border: 1px dotted #2c2c2c;
+}
+.action-button, .menu-items{
+    margin: 1rem;
+}

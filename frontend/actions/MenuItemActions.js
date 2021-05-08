@@ -18,12 +18,13 @@ export const receiveMenuItem = (menuItem) => {
 
 //Thunk Actions
 
-export const fetchMenuItems = () => (dispatch) => {
+export const fetchMenuItems = () => dispatch => {
   return MenuItemAPIUtil.fetchMenuItems()
     .then( result => dispatch(receiveAllMenuItems(result)))
 }
 
-export const fetchMenuItem = (menuItemId) => (dispatch) => {
+export const fetchMenuItem = (menuItemId) => dispatch => {
   return MenuItemAPIUtil.fetchMenuItem(menuItemId)
-  .then( result => dispatch(receiveProduct(result)))
+  .then( result => dispatch(receiveMenuItem(result)))
+
 };

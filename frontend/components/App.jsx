@@ -1,5 +1,5 @@
-import React ,{ useEffect} from 'react';
-import { Route, Switch, Link, Redirect } from 'react-router-dom';
+import React , {useEffect} from 'react';
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import NavBarContainer from './NavBar/NavBarContainer';
 import SignUpForm from "./Session/SignUpFormContainer"
 import SliderData from "./ImageSlider/SliderData.js"
@@ -9,7 +9,9 @@ import AOS from "aos"
 import Hero from "./Hero/Hero"
 import Modal from "./Modal/Modal"
 import About from "./About/About"
-
+import MenuItemIndex from "./MenuItem/MenuItemIndex"
+// import MenuItemShow from './MenuItem/MenuItemShow'
+// import { fetchMenuItems } from './../actions/MenuItemActions'
 
 function App() {
 
@@ -20,16 +22,18 @@ function App() {
   }, [])
   return(
     <div>
-    <Modal />
-    <NavBarContainer />
-    
-    <Hero slides={SliderData} />
-    <Grassfed />
-    <About />
-    
-    {/* <Switch>
-      <Redirect to="/"  />
-    </Switch> */}
+      <Modal />
+      <NavBarContainer />
+      <Switch>
+        <Route exact path="/">
+          <Hero slides={SliderData} />
+          <About />
+          <Grassfed />
+        </Route>
+        <Route exact path="/menu-items">
+          <MenuItemIndex />
+        </Route>
+      </Switch>
       </div>
     )
 };
