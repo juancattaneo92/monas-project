@@ -5,17 +5,14 @@ import SignUpForm from "./Session/SignUpFormContainer"
 import SliderData from "./ImageSlider/SliderData.js"
 import Grassfed from "./Grassfed/Grassfed"
 import AOS from "aos"
-// import 'aos/dist/aos.css'
 import Hero from "./Hero/Hero"
 import Modal from "./Modal/Modal"
 import About from "./About/About"
 import MenuItemIndex from "./MenuItem/MenuItemIndex"
-// import MenuItemShow from './MenuItem/MenuItemShow'
-// import { fetchMenuItems } from './../actions/MenuItemActions'
+import Catering from "./Catering/Catering"
+import Location from "./Location/Location"
 
 function App() {
-
-  // const port = process.env.PORT || 5000;
 
   useEffect(() => { 
     AOS.init({});
@@ -32,6 +29,12 @@ function App() {
         </Route>
         <Route exact path="/menu-items">
           <MenuItemIndex />
+        </Route>
+        <Route exact path="/catering">
+          <Catering />
+        </Route>
+        <Route exact path="/locations">
+          <Location />
         </Route>
       </Switch>
       </div>
