@@ -38,7 +38,7 @@
     </script>
     <%= javascript_include_tag 'application' %>
 
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <%if current_user %>
       <script>
         window.currentUser = {
@@ -48,7 +48,7 @@
           "name": "<%= current_user.name%>"
         };
       </script>
-<%end%>
+    <%end%>
   </head>
 
   <body>
