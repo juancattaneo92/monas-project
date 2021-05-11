@@ -5,7 +5,7 @@ const Catering = () => {
     <section className="feature-catering">
       <div className="feature-wrapper">
         <h1>Catering is also available!</h1>
-        <h2>WE'LL BRING YOU MONAS TO YOU</h2>
+        <h2>WE'LL BRING MONAS TO YOU</h2>
         <h2>let us bring you all our flavors to you. We offer full-service catering for every event</h2>
       </div>
       <form className="feature-form">
