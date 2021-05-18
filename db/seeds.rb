@@ -98,22 +98,22 @@ item27.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.c
 
 #SALADS
 item28 = MenuItem.create(name: "Ceasar Salad", description: 'Romaine lettuce, croutons, and ceasar dressing, grilled chicken (optional)', price: '9.95', ingredients: 'Romaine lettuce, Croutons, Ceasar dressing', category: 'salad') #PRICE INCREASE IF ADDED CHICKEN
-# item28.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/ceasar-salad.jpg"), filename:'ceasar-salad.jpg')
+item28.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/ceasar-salad.jpg"), filename:'ceasar-salad.jpg')
 
 item29 = MenuItem.create(name: "Kale Chicken Salad", description: 'Baby kale, spinach, quinoa, pearl tomatoes, avocado, grilled pineapple, grilled chicken, and house vinaigrette dressing', price: '13.75', ingredients: 'Baby Kale, Spinach, Quinoa, Pearl Tomatoes, Avocado, Grilled Pineapple, Grilled Chicken, House Vinagrette Dressing', category: 'salad') 
-# item29.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/kale-salad.jpg"), filename:'kale-salad.pgj')
+item29.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/kale-salad.jpg"), filename:'kale-salad.jpg')
 
 item30 = MenuItem.create(name: "Mona's Cobb Chicken Salad", description: 'Romaine lettuce, mixed greens, bacon, grilled chicken, hard-boiled egg, avocado, crumbled blue cheese, pearl tomatoes, and ranch dressing', price: '13.75', ingredients: 'Romaine Lettuce, Mixed Greens, Bacon, Grilled Chicken, Hard-Boiled Egg, Avocado, Crumbled Blue Cheese, Pearl Tomatoes, Ranch Dressing', category: 'salad') 
-# item30.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/cobb-salad.jpg"), filename:'cobb-salad.jpg')
+item30.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/cobb-salad.jpg"), filename:'cobb-salad.jpg')
 
 item31 = MenuItem.create(name: "Mediterranean Salad", description: 'Romaine lettuce, cucumber, red onion, pearl tomatoes, olives, feta cheese, grilled chicken (optional), and house vinaigrette.', price: '10.75', ingredients: 'Romaine Lettuce, Cucumber, Red Onion, Pearl Tomatoes, Olives, Feta Cheese, Grilled Chicken (optional), House Vinaigrette.', category: 'salad') #PRICE INCREASE IF ADDED CHICKEN
-# item31.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/cobb-salad.jpg"), filename:'cobb-salad.jpg')
+item31.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/mediterranean-salad.jpg"), filename:'mediterranean-salad.jpg')
 
 item32 = MenuItem.create(name: "Southwestern Chicken Salad", description: 'Romaine lettuce, grilled chicken, black beans, cilantro, tortilla strips, pearl tomatoes, corn, red onion, avocado, and ranch dressing', price: '13.75', ingredients: 'Romaine Lettuce, Grilled Chicken, Black Beans, Cilantro, Tortilla Strips, Pearl Tomatoes, Corn, Red Onion, Avocado, Ranch Dressing', category: 'salad') 
-# item32.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/cobb-salad.jpg"), filename:'cobb-salad.jpg')
+item32.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/southwestern-salad.jpg"), filename:'southwestern-salad.jpg')
 
 item33 = MenuItem.create(name: "Steak Salad", description: 'Arugula, spinach, grilled tri-tip, beets, goat cheese, pearl tomatoes, crispy onions, and house vinaigrette', price: '14.25', ingredients: 'Arugula, Spinach, Grilled Tri-Tip, Beets, Goat Cheese, Pearl Tomatoes, Crispy Onions, House Vinaigrette', category: 'salad') 
-# item33.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/cobb-salad.jpg"), filename:'cobb-salad.jpg')
+item33.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/salads/steak-salad.jpg"), filename:'steak-salad.jpg')
 
 #BEVERAGE
 item34 = MenuItem.create(name: "Coke", description: 'Refreshing soda over ice', price: '2.50', ingredients: 'Soda', category: 'beverage') 
