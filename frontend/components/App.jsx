@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/">
           <Hero slides={SliderData} />
           <About />
-          <Grassfed />
+          {/* <Grassfed /> */}
         </Route>
         <Route exact path="/menu-items">
           <MenuItemIndex />

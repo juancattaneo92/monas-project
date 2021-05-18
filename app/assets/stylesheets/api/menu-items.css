@@ -67,9 +67,9 @@
   border-bottom: #2c2c2c;
 }
 
-.action-button, .menu-items{
-    margin: 1.5rem;
-   float: right;
+.menu-items{
+  margin: 1.5rem;
+  float: right;
 }
 
 @media screen and (min-width:768px){
