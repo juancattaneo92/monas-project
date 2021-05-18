@@ -11,15 +11,35 @@ MenuItem.destroy_all
 
 # BURGERS
 item1 = MenuItem.create(name: 'Monas Burgers', description: 'Niman ranch burger patty, melted swiss cheese, crispy bacon, sauteed onions and drizzle with BBQ sauce', price:'13.50', ingredients:'Brioche Bun, Sauteed Onions, BBQ sauce, Swiss Cheese', category: 'burgers')
+item1.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/monas.jpg"), filename:'monas.jpg' )
+
 item2 = MenuItem.create(name: 'Classic Burger', description: 'Niman ranch burger patty, melted cheese (optional), sliced onion(*), sliced tomato(*) and fresh lettuce(*). *On the side', price:'10.25', ingredients:'Brioche Bun, Onion, Tomato, lettuce', category: 'burgers')
+item2.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/classic.jpg"), filename:'classic.jpg' )
+
 item3 = MenuItem.create(name: 'Drunken Burger', description: 'Niman ranch burger patty, melted blue cheese, crispy bacon, crispy onions and drizzle with lager beer-honey sauce', price:'13.25', ingredients:'Brioche Bun, Crispy Onion, Lager Beer-Honey Sauce, Blue Cheese, Bacon', category: 'burgers')
+item3.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/drunken.jpg"), filename:'drunken.jpg' )
+
 item4 = MenuItem.create(name: 'Screw The Diet Burger', description: 'Niman ranch burger patty, melted swiss cheese, fried egg, crispy bacon, crispy onions and drizzle with BBQ sauce ', price:'13.95', ingredients:'Brioche Bun, Fried Egg, Crispy Onion, Swiss Cheese, BBQ sauce, Bacon', category: 'burgers')
+item4.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/screw-diet.jpg"), filename:'screw-diet.jpg' )
+
 item5 = MenuItem.create(name: 'Cali Burger', description: 'Niman ranch burger patty, melted jack cheese, fresh sprouts and avocado', price:'13.25', ingredients:'Brioche Bun, Jack Cheese, Avocado, Sprouts', category: 'burgers')
+item5.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/cali.jpg"), filename:'cali.jpg' )
+
 item6 = MenuItem.create(name: 'Hawaiian Burger', description: 'Niman ranch burger patty, melted jack Cheese, smoked ham, grilled teriyaki pineapple', price:'13.50', ingredients:'Brioche Bun, Jack Cheese, Pineapple, Teriyaki sauce, Smoke Ham', category: 'burgers')
+item6.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/hawaiian.jpg"), filename:'hawaiian.jpg' )
+
 item7 = MenuItem.create(name: 'Mediterranean Burger', description: 'Niman ranch burger patty, feta cheese, roasted red bell pepper, pesto sauce and fresh spinach', price:'13.25', ingredients:'Brioche Bun, Feta Cheese, Red Bell Pepper, Pesto sauce, Spinach', category: 'burgers')
+item7.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/mediterranean.jpg"), filename:'mediterranean.jpg' )
+
 item8 = MenuItem.create(name: 'Chicano Burger', description: 'Niman ranch burger patty, melted cheddar cheese, fresh guacamole and cilantro', price:'13.25', ingredients:'Brioche Bun, Cheddar Cheese, Cilantro, Guacamole', category: 'burgers')
+item8.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/chicano.jpg"), filename:'chicano.jpg' )
+
 item9 = MenuItem.create(name: 'Truffle Burger', description: 'Niman ranch burger patty, melted truffle tremor goat cheese, sauteed mushrooms and fresh arugula', price:'14.75', ingredients:'Brioche Bun, Truffle Tremor Goat Cheese, Arugula, Sauteed Mushrooms', category: 'burgers')
+item9.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/truffle.jpg"), filename:'truffle.jpg' )
+
 item10 = MenuItem.create(name: 'Diablo Burger', description: 'Niman ranch burger patty, melted pepper jack cheese, sauteed jalapeños, sauteed onions and drizzle with chipotle aioli', price:'13.50', ingredients:'Brioche Bun, Pepper Jack Cheese, Sauteed Jalapeños, Sauteed Onions, Chipotle Aioli', category: 'burgers')
+item10.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/diablo.jpg"), filename:'diablo.jpg' )
+
 
 #SIDES
 item11 = MenuItem.create(name: 'Skinny Cut', description: 'Thin Frech fries', price: '4.50, 6.50', size: 'small, large', ingredients: 'Fried Potatoes', category: 'fries')
