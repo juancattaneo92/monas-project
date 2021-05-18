@@ -37,10 +37,10 @@ export default function MenuItemIndex() {
           })}
 
         </div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div>
         <div className="shopping-cart-index">
           <h1 className="current-order-title">Ready To Order?</h1>
-        </div>
+        </div> */}
       </section>
     </div>
   )
