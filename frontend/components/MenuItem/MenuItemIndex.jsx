@@ -17,30 +17,31 @@ export default function MenuItemIndex() {
 
   return (
     <div>
-      <div></div>
-      <section className="menu-index-section">
-        <div className="wrapper-menu-index">
-          {items.map(item => {
-            return (
-              <ul className="menu-item-index" key={item.id}>
-                <img src={item.photo} alt=""/>
-                <div className="menu-details">
-                  <div className="menu-name">
-                    <li>{item.name}</li>
-                    <li>$ {item.price}</li>
+      {/* <div>Burgers, Salads, Starters, Fries, Un-Burgers, Beverages, Sides</div> */}
+      <section className="menu-index-section m-t">
+        <div className="menu-index-container">
+          <div className="wrapper-menu-index">
+            {items.map(item => {
+              return (
+                <ul className="menu-item-index" key={item.id}>
+                  <img src={item.photo} alt=""/>
+                  <div className="menu-details">
+                    <div className="menu-name">
+                      <li>{item.name}</li>
+                      <li>$ {item.price}</li>
+                    </div>
+                    <li>{item.description}</li>
+                    <button className='action-button menu-items'>Take me Home</button>
                   </div>
-                  <li>{item.description}</li>
-                  <button className='action-button menu-items'>Take me Home</button>
-                </div>
-              </ul>
-            )
-          })}
+                </ul>
+              )
+            })}
 
+          </div>
+          <div className="shopping-cart-index">
+            <h1 className="current-order-title">Ready To Order?</h1>
+          </div> 
         </div>
-        {/* <div className="divider"></div>
-        <div className="shopping-cart-index">
-          <h1 className="current-order-title">Ready To Order?</h1>
-        </div> */}
       </section>
     </div>
   )
