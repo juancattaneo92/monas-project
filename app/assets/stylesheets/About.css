@@ -39,13 +39,18 @@
   font-size: 1.2rem;
 }
 .about-content h2{
+  /* text-align: center; */
   margin-top:50px;
 }
 .about-content p{
   margin-top:50px;
 }
-.about-content button{
+.learn-more-button{
+  /* align-items: center; */
   margin-top:50px;
+}
+.about-wrapper{
+
 }
 
 @media only screen and (max-width:1047px){
