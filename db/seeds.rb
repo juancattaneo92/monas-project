@@ -65,3 +65,11 @@ item39 = MenuItem.create(name: "Strawberry Lemonade", description: 'Refreshing h
 #items for coffee & tea
 
 #MILKSHAKES
+item34 = MenuItem.create(name: "Vanilla", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Milk', category: 'milkshake') 
+item34 = MenuItem.create(name: "Chocolate", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: "Vanilla Ice Cream, Hershey's Chocolate, Milk", category: 'milkshake') 
+item34 = MenuItem.create(name: "Strawberry", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Strawberries, Milk', category: 'milkshake') 
+item34 = MenuItem.create(name: "Oreo", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Crushed Oreos, Milk', category: 'milkshake') 
+item34 = MenuItem.create(name: "Nutella", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Nutella, Milk', category: 'milkshake') 
+item34 = MenuItem.create(name: "Reese's Peanut Butter", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: "Vanilla Ice Cream, Reese's Peanut Butter, Milk", category: 'milkshake') 
+item34 = MenuItem.create(name: "Birthday Cake", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Baking Soda, Rainbow Confetti,  Milk', category: 'milkshake') 
+item34 = MenuItem.create(name: "Very Berry", description: 'Thick hand-crafted milkshake available in 12oz & 24oz' price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Blueberry, Strawberry, Blackberry, Milk', category: 'milkshake') 
