@@ -9,7 +9,7 @@ export class About extends Component {
         return (
             <section className="about">
                 <div className="container">
-                    <div class="about-wrapper">
+                    <div className="about-wrapper">
                         <div className="about-image">
                             <img data-aos='zoom-in' data-aos-duration='500' src={window.mugshot} alt="" />
                         </div>
