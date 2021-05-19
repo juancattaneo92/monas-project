@@ -58,9 +58,7 @@
 
 .feature-1 .feature-wrapper {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100vw;
   background-color: rgba(175, 175, 175, 0.194);
