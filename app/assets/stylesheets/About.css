@@ -1,12 +1,5 @@
-/* :root {
-  --main-black: #2c2c2c;
-  --transparent-button-color: #f5f4f4;
-  --styled-font: "Jost";
-  --functional-font: "Montserrat";
-  --mobile-break-point: 768px;
-} */
+
 .about{
-  /* height: calc(100vh - 10vh); */
   height: 100vh;
   background-color: #2c2c2c;
   font-family: var(--styled-font);
@@ -31,17 +24,13 @@
   width: 45%; 
   margin: 10px;
   font-size: 1.2rem;
-  font-stretch: expanded;
+  line-height: 1.75rem;
 }
-.about-content h2{
-  margin-top:50px;
-}
+
 .about-content p{
   margin-top:50px;
 }
-.learn-more-button{
-  margin-top:50px;
-}
+
 .about-wrapper{
   display: flex;
   flex-direction: row;
@@ -58,14 +47,15 @@
   }
   .about-content{
     width: 100%;
+    margin-top: 20px;
     }
   .about-wrapper{
   display: flex;
   flex-direction: column;
-}
-.about{
-  margin-bottom: 100px;
-}
+  }
+  .about-content p{
+      margin-top:0;
+  }
 }
 
 @media only screen and (max-width:768px){
@@ -84,9 +74,9 @@
       width: 95%;
       font-size: 1rem;
     }
-    .about{
-  margin-bottom: 100px;
-}
+    .about-content p{
+        margin-top:0;
+    }
   }
 
 /*.feature-2 {
