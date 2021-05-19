@@ -11,7 +11,6 @@ MenuItem.destroy_all
 
 # BURGERS
 item1 = MenuItem.create(name: 'Monas Burgers', description: 'Niman ranch burger patty, melted swiss cheese, crispy bacon, sauteed onions and drizzle with BBQ sauce', price:'13.50', ingredients:'Brioche Bun, Sauteed Onions, BBQ sauce, Swiss Cheese', category: 'burgers')
-# item1.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/monas.jpg"), filename:'monas.jpg' )
 item1.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/burgers/monas.jpg"), filename:'monas.jpg' )
 
 item2 = MenuItem.create(name: 'Classic Burger', description: 'Niman ranch burger patty, melted cheese (optional), sliced onion(*), sliced tomato(*) and fresh lettuce(*). *On the side', price:'10.25', ingredients:'Brioche Bun, Onion, Tomato, lettuce', category: 'burgers')
@@ -44,41 +43,42 @@ item10.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.c
 
 #SIDES
 item11 = MenuItem.create(name: 'Skinny Cut', description: 'Thin Frech fries', price: '4.50, 6.50', size: 'small, large', ingredients: 'Fried Potatoes', category: 'fries')
-# item11.photo.attach(io: open(""), filename:'')
+item11.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/fries/skinny-fries.jpg"), filename:'skinny-fries.jpg')
 
-item12 = MenuItem.create(name: 'Potato Flats', description: 'Thick French fries', price: '4.50, 6.50', size: 'small, large', ingredients: 'Fried Potatoes', category: 'fries')
-# item12.photo.attach(io: open(""), filename:'')
 
-item13 = MenuItem.create(name: 'Sweet Potato', description: 'Thin fried sweet potatoes', price: '4.95, 6.95', size: 'small, large', ingredients: 'Fried Sweet Potatoes', category: 'fries')
-# item13.photo.attach(io: open(""), filename:'')
+item12 = MenuItem.create(name: 'Sweet Potato', description: 'Thin fried sweet potatoes', price: '4.95, 6.95', size: 'small, large', ingredients: 'Fried Sweet Potatoes', category: 'fries')
+item12.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/fries/sweet-potato.jpeg"), filename:'sweet-potato.jpeg')
 
-item14 = MenuItem.create(name: 'Spicy Curly', description: 'Thin spiced curly fries', price: '4.75, 6.95', size: 'small, large', ingredients: 'Spiced Curly Potatoes', category: 'fries')
-# item14.photo.attach(io: open(""), filename:'')
+item13 = MenuItem.create(name: 'Spicy Curly', description: 'Thin spiced curly fries', price: '4.75, 6.95', size: 'small, large', ingredients: 'Spiced Curly Potatoes', category: 'fries')
+item13.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/fries/curly-fries.jpg"), filename:'curly-fries.jpg')
+
+item14 = MenuItem.create(name: 'Potato Flats', description: 'Thick French fries', price: '4.50, 6.50', size: 'small, large', ingredients: 'Fried Potatoes', category: 'fries')
+item14.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/fries/skinny-fries.jpg"), filename:'skinny-fries.jpg')
 
 item15 = MenuItem.create(name: 'Onion Rings', description: 'Beer battered onion rings topped with Parmesan cheese', price: '6.25, 7.95', size: 'small, large', ingredients: 'Beer Battered Onion, Parmesan Cheese', category: 'fries')
-# item15.photo.attach(io: open(""), filename:'')
+item15.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/fries/onion-ring.jpg"), filename:'onion-ring.jpg')
 
 #STARTERS
 item16 = MenuItem.create(name: 'Mixed Greens', description: 'Mixed greens lettuce, pearl tomatoes, grated carrot, sliced cucumber and house vinaigrette dressing', price: '6.25', ingredients: 'Mixed Greens Lettuce, Pearl Tomatoes, Carrot, Cucumber, House Vinaigrette Dressing', category: 'starters')
-# item16.photo.attach(io: open(""), filename:'')
+item16.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/mixed-greens.jpg"), filename:'mixed-greens.jpg')
 
 item17 = MenuItem.create(name: 'Small Caesar', description: 'Romaine lettuce, home croutons, parmesan cheese and Caesar dressing', price: '6.25', ingredients: 'Romaine lettuce, Croutons, Parmesan Cheese, Caesar Dressing', category: 'starters')
-# item17.photo.attach(io: open(""), filename:'')
+item17.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/ceasar-salad.jpg"), filename:'ceasar-salad.jpg')
 
 item18 = MenuItem.create(name: 'Wedge', description: 'Iceberg lettuce, crumbled crispy bacon, crumbled blue cheese, pearl tomatoes and blue cheese dressing', price: '6.50', ingredients: 'Iceberg Lettuce, Bacon, Blue Cheese, Pearl Tomatoes, Blue Cheese Dressing', category: 'starters')
-# item18.photo.attach(io: open(""), filename:'')
+item18.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/wedge.jpg"), filename:'wedge.jpg')
 
 item19 = MenuItem.create(name: 'La Monita', description: 'Mixed greens lettuce, quinoa, roasted corn, crumbled feta cheese, pearl tomatoes and mint vinaigrette dressing', price: '6.50', ingredients: 'Mixed Greens Lettuce, Quinoa, Corn, Feta Cheese, Pearl Tomatoes, Mint Vinaigrette Dressing', category: 'starters')
-# item19.photo.attach(io: open(""), filename:'')
+item19.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/monita.jpg"), filename:'monita.jpg')
 
 item20 = MenuItem.create(name: 'Bowl of Chili', description: 'Stew chili topped with cheddar cheese and chopped fresh onions', price: '7.50', ingredients: 'Chili Peppers, Kidney Beans, Onions, Cheddar Cheese', category: 'starters')
-# item20.photo.attach(io: open(""), filename:'')
+item20.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/bowl-chili.jpg"), filename:'bowl-chili.jpg')
 
 item21 = MenuItem.create(name: 'Chicken Tenders', description: 'Fried chicken tenders served with a side of BBQ sauce', price: '6.95', ingredients: 'Breaded Chicken, BBQ sauce', category: 'starters')
-# item21.photo.attach(io: open(""), filename:'')
+item21.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/chicken-tenders.jpg"), filename:'chicken-tenders.jpg')
 
 item22 = MenuItem.create(name: 'Buffalo Chicken Wings', description: 'Wings tossed in buffalo sauce served with stock celery', price: '7.95', ingredients: 'Chicken Wings, Buffalo Wings, Celery', category: 'starters')
-# item22.photo.attach(io: open(""), filename:'')
+item22.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/sides/wings.jpg"), filename:'wings.jpg')
 
 #UNBURGERS
 item23 = MenuItem.create(name: "Mona's Hot Dog", description: 'Sauteed jalapeños and onions, melted cheddar cheese, tomatoes, side of relish, and hot dog bun', price: '11.25', ingredients: 'Sauteed Jalapeños, Sauteed Onions, Melted Cheddar Cheese, Tomatoes, Relish, Hot-Dog Bun', category: 'un-burger') #side:
@@ -117,38 +117,53 @@ item33.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.c
 
 #BEVERAGE
 item34 = MenuItem.create(name: "Coke", description: 'Refreshing soda over ice', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item34.photo.attach(io: open(""), filename:'')
+item34.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/cola.jpg"), filename:'cola.jpg')
+
 item35 = MenuItem.create(name: "Diet Coke", description: 'Refreshing soda over ice', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item35.photo.attach(io: open(""), filename:'')
+item35.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/cola.jpg"), filename:'cola.jpg')
+
 item36 = MenuItem.create(name: "Fanta", description: 'Refreshing soda over ice', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item36.photo.attach(io: open(""), filename:'')
+item36.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/fanta.jpg"), filename:'fanta.jpg')
+
 item37 = MenuItem.create(name: "Sprite", description: 'Refreshing soda over ice', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item37.photo.attach(io: open(""), filename:'')
+item37.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/sprite.jpg"), filename:'sprite.jpg')
+
 item38 = MenuItem.create(name: "Barq's", description: 'Refreshing soda over ice', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item38.photo.attach(io: open(""), filename:'')
+item38.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/cola.jpg"), filename:'cola.jpg')
+
 item39 = MenuItem.create(name: "Pellegrino", description: '8oz bottle', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item39.photo.attach(io: open(""), filename:'')
+item39.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/pellegrino-sq.png"), filename:'pellegrino-sq.png')
+
 item40 = MenuItem.create(name: "Brewed Iced Tea", description: 'Unsweeted ice tea, brewed daily', price: '2.50', ingredients: 'Soda', category: 'beverage') 
-# item40.photo.attach(io: open(""), filename:'')
+item40.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/ice-tea.jpg"), filename:'ice-tea.jpg')
+
 item41 = MenuItem.create(name: "Homemade Lemonade", description: 'Refreshing homemade lemonade', price: '2.50', ingredients: 'Lemon Juice, Sugar', category: 'beverage') 
-# item41.photo.attach(io: open(""), filename:'')
+item41.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/lemonade.jpg"), filename:'lemonade.jpg')
+
 item42 = MenuItem.create(name: "Strawberry Lemonade", description: 'Refreshing homemade Strawberry lemonade', price: '2.50', ingredients: 'Lemon Juice, Strawberries, Sugar', category: 'beverage') 
-# item42.photo.attach(io: open(""), filename:'')
+item42.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/strawberry-lemonade.jpg"), filename:'strawberry-lemonade.jpg')
 
 #MILKSHAKES
 item43 = MenuItem.create(name: "Vanilla", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Milk', category: 'milkshake') 
-# item43.photo.attach(io: open(""), filename:'')
+item43.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/vanilla-shake.jpg"), filename:'vanilla-shake.jpg')
+
 item44 = MenuItem.create(name: "Chocolate", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: "Vanilla Ice Cream, Hershey's Chocolate, Milk", category: 'milkshake') 
-# item44.photo.attach(io: open(""), filename:'')
+item44.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/chocolate.jpg"), filename:'chocolate.jpg')
+
 item45 = MenuItem.create(name: "Strawberry", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Strawberries, Milk', category: 'milkshake') 
-# item45.photo.attach(io: open(""), filename:'')
+item45.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/strawberry-shake.jpg"), filename:'strawberry-shake.jpg')
+
 item46 = MenuItem.create(name: "Oreo", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Crushed Oreos, Milk', category: 'milkshake') 
-# item46.photo.attach(io: open(""), filename:'')
+item46.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/oreo-shake.jpg"), filename:'oreo-shake.jpg')
+
 item47 = MenuItem.create(name: "Nutella", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Nutella, Milk', category: 'milkshake') 
-# item47.photo.attach(io: open(""), filename:'')
+item47.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/nutella-shake.jpg"), filename:'nutella-shake.jpg')
+
 item48 = MenuItem.create(name: "Reese's Peanut Butter", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: "Vanilla Ice Cream, Reese's Peanut Butter, Milk", category: 'milkshake') 
-# item48.photo.attach(io: open(""), filename:'')
+item48.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/reeses-shake.jpg"), filename:'reeses-shake.jpg')
+
 item49 = MenuItem.create(name: "Birthday Cake", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Baking Soda, Rainbow Confetti,  Milk', category: 'milkshake') 
-# item49.photo.attach(io: open(""), filename:'')
+item49.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/birthday-shake.jpg"), filename:'birthday-shake.jpg')
+
 item50 = MenuItem.create(name: "Very Berry", description: 'Thick hand-crafted milkshake available in 12oz & 24oz', price: '4.95, 7.50', ingredients: 'Vanilla Ice Cream, Blueberry, Strawberry, Blackberry, Milk', category: 'milkshake') 
-# item50.photo.attach(io: open(""), filename:'')
+item50.photo.attach(io: open("https://monas-burgers-dev.s3-us-west-1.amazonaws.com/drinks/very-berry-shake.jpg"), filename:'very-berry-shake.jpg')
