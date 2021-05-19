@@ -20,7 +20,7 @@
     position: relative;
     height: 100%;
   }
-}
+} 
 
 .feature-1 .feature-image-container {
   width: 50vw;
@@ -35,15 +35,15 @@
 
 @media (max-width: 768px) {
   .feature-1 .feature-image-container {
-    width: 100vw;
+    width: 50vw;
   }
 }
 
 .feature-1 .feature-1-image {
   width: inherit;
-  height: 80vh;
+  height: 60vh;
   -o-object-fit: cover;
-     object-fit: cover;
+     object-fit: contain;
   padding: 1rem;
   max-width: 60%;
 }
@@ -58,15 +58,12 @@
 
 .feature-1 .feature-wrapper {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100vw;
   background-color: rgba(175, 175, 175, 0.194);
   border-radius: 4px;
   height: 100%;
-  /* margin-top: 2em; */
 }
 
 
@@ -81,7 +78,7 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-}
+} 
 
 .feature-1 .grass-fed-blurb-container {
   -webkit-box-pack: center;
@@ -128,7 +125,7 @@
   padding: 1rem;
   font-size: 2rem;
   font-weight: 700;
-}
+} 
 
 .feature-1::before {
   content: "";
@@ -139,5 +136,8 @@
   width: 100%;
   background-color: whitesmoke;
   z-index: -1;
+} 
+.feature-wrapper h2{
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=Grassfed.css.map */
