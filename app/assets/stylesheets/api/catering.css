@@ -1,13 +1,11 @@
 .feature-catering{
   margin: 7rem 1rem;
   font-size: 1.5em;
+  font-family: 'Montserrat';
 }
 
 .feature-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Montserrat';
+  text-align: center;
 }
 .feature-wrapper h1{
   font-size: 2em;
@@ -15,9 +13,6 @@
   font-family: 'Jost';
 }
 
-/* .feature-wrapper h2{
-  margin-bottom: 2em;
-} */
 
 .feature-form{
   display: flex;
@@ -25,6 +20,7 @@
   align-items: center;
   font-family: 'Montserrat';
   font-size: 1em;
+  margin-top: 1em;
 }
 
 .feature-label{
@@ -32,7 +28,35 @@
 }
 
 textarea {
-  width: 60em;
+  width: 50%;
+  height: 6em;
+  resize: none;
+  font-family: 'Montserrat';
+  padding: 0.5em;
+}
+
+input {
+  padding: 0.5em;
+  width: 50%;
   height: 3em;
   resize: none;
+  font-family: 'Montserrat';
+}
+
+@media only screen and (max-width:1047px){
+    textarea {
+    width: 70%;
+  }
+  input {
+  width: 70%;
+}
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 90%;
+  }
+  input {
+  width: 90%;
+}
 }

@@ -9,18 +9,11 @@ const Catering = () => {
         <h2>let us bring you all our flavors to you. We offer full-service catering for every event</h2>
       </div>
       <form className="feature-form">
-        <label className="feature-label">Full Name <br/>
-            <textarea type="text" placeholder="Full Name" />
-        </label >
-        <label className="feature-label">Phone Number <br/>
-          <textarea type ="text" placeholder="Phone Number" />
-        </label>
-        <label className="feature-label">Email <br/>
-          <textarea type ="text" placeholder="Email"/>
-        </label>
-        <label className="feature-label">Message <br/>
-          <textarea type="text" placeholder="Message" />
-        </label>
+          <input type="text" placeholder="Full Name" /><br />
+          <input type ="text" placeholder="Phone Number" /><br />
+          <input type ="text" placeholder="Email"/><br />
+          <textarea rows="10" placeholder="Your Message"/><br />
+          <button className="action-button">Send</button>
       </form>
     </section>
   )
