@@ -14,9 +14,9 @@ const SliderData = [
   },
   {
     imageUrl: window.hero_8_url,
-    caption: "Beers",
-    info: "Hand Selected",
-    alt: "Beers"
+    caption: "Milkshakes",
+    info: "Hand Made",
+    alt: "Milkshakes"
   },
   {
     imageUrl: window.hero_1_url,

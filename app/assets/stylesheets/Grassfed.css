@@ -35,7 +35,8 @@
 
 @media (max-width: 768px) {
   .feature-1 .feature-image-container {
-    width: 50vw;
+    width: 100vw;
+    margin-bottom: 5em;
   }
 }
 
@@ -74,9 +75,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+     -webkit-box-pack: start;
+        -ms-flex-pack: start; 
+           justify-content: flex-start; 
   }
 } 
 
@@ -99,10 +100,10 @@
 
 @media (max-width: 768px) {
   .feature-1 .grass-fed-blurb-container {
-    position: absolute;
-    color: whitesmoke;
+    /* position: absolute; */
+    /* color: whitesmoke; */
+    height: 50vh;
     width: 100vw;
-    margin-top: 1.5rem;
   }
 }
 
@@ -140,4 +141,18 @@
 .feature-wrapper h2{
   margin-bottom: 0;
 }
+
+@media (max-width: 374px){
+  .grass-fed-blurb-container{
+    width: 95%;
+    font-size: 0.8rem;  
+    margin: 5px;
+    line-height: 0.9rem;
+  } 
+  .feature-1 .feature-title {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
 /*# sourceMappingURL=Grassfed.css.map */

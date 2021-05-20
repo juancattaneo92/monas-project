@@ -66,17 +66,34 @@
     width: 100%;
     display: block;
   }
-
-    .about-content{
+  .about-content{
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 95%;
       font-size: 1rem;
+  }
+  .about-content p{
+        margin-top:0;
+  }
+}
+
+  @media (max-width: 374px){
+    .about-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      font-size: 0.8rem;  
+      margin: 5px;
+      line-height: 0.9rem;
+    }
+    .about{
+      height: 100vh;    
     }
     .about-content p{
-        margin-top:0;
-    }
+      margin-top: 5px;
+  }
   }
 
 /*.feature-2 {
