@@ -55,7 +55,7 @@ class SignInForm extends React.Component {
               <br />
             <input className="field" type="password" onChange={this.handleChange("password")} value={this.state.password} onChange={this.handleChange('password')} placeholder="Password" />
               <br/>
-            <button className="action-button" type="submit" value={this.props.formType}>{this.props.formType}</button>
+            <button className="action-button-a" type="submit" value={this.props.formType}>{this.props.formType}</button>
             <br/>
             <h2 className="change-form">New to Monas? 
               <a>{this.props.otherForm}</a>

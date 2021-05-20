@@ -76,7 +76,7 @@
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: space-between;
 }
 
 .nav-bar-container .nav-links-container {
@@ -141,6 +141,12 @@ a:-webkit-any-link {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar-container .logo-text {
+    font-size: 35px;
   }
 }
 

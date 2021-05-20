@@ -62,9 +62,9 @@
   .container{
     width: 100%;
   }
-  .about .about-image{
-    width: 100%;
-    display: block;
+  .about .about-image img{
+    max-width: 100%;
+    padding: 0;
   }
   .about-content{
       display: flex;
@@ -84,6 +84,7 @@
       flex-direction: column;
       align-items: center;
       width: 95%;
+
       font-size: 0.8rem;  
       margin: 5px;
       line-height: 0.9rem;
