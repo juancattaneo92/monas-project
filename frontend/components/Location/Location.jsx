@@ -71,7 +71,26 @@ const Location = () => {
         </LoadScript>
       </div>
       <div className="locations-info">
-
+          <div>
+            Business Hours:
+            Monday - Thursday
+            11:00 am – 8:30 pm
+            Friday & Saturday
+            11:00 am – 9:30 pm
+            Sunday
+            11:00 am – 8:30 pm
+            *Hours are 1/2 hour longer during Spring & Summer months
+          </div>
+          <div>
+            Business Hours:
+            Monday - Thursday
+            11:00 am – 8:30 pm
+            Friday & Saturday
+            11:00 am – 9:00 pm
+            Sunday
+            11:00 am – 8:00 pm
+            *Hours are 1/2 hour longer during Spring & Summer months
+          </div>
       </div>
     </div>
   )
