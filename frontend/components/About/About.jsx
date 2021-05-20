@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 
 
-export class About extends Component {
-
-
-    render() {
+const About = () => {
 
         return (
             <section className="about">
@@ -24,7 +21,6 @@ export class About extends Component {
                 </div>
             </section>
         )
-    }
 }
 
 export default About
