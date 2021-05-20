@@ -31,7 +31,7 @@ export default function MenuItemIndex() {
                       <li>$ {item.price}</li>
                     </div>
                     <li>{item.description}</li>
-                    <button className='action-button menu-items'>Take me Home</button>
+                    <button className='action-button-a menu-items'>Take me Home</button>
                   </div>
                 </ul>
               )

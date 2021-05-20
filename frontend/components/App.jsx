@@ -10,7 +10,9 @@ import Modal from "./Modal/Modal"
 import About from "./About/About"
 import MenuItemIndex from "./MenuItem/MenuItemIndex"
 import Catering from "./Catering/Catering"
+import Contact from "./Contact/Contact"
 import Location from "./Location/Location"
+import Footer from "./Footer/Footer"
 
 function App() {
 
@@ -33,10 +35,14 @@ function App() {
         <Route exact path="/catering">
           <Catering />
         </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
         <Route exact path="/locations">
           <Location />
         </Route>
       </Switch>
+      <Footer/>
       </div>
     )
 };

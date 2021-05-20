@@ -5,7 +5,7 @@ import React, {useState} from 'react'
 // import emailjs from 'emailjs-com'
 //instal => npm install emailjs-com --save
 
-const Catering = () => {
+const Contact = () => {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
@@ -30,9 +30,9 @@ const Catering = () => {
   return (
     <section className="feature-catering">
       <div className="feature-wrapper">
-        <h1>Catering is also available!</h1>
-        <h2>WE'LL BRING MONAS TO YOU</h2>
-        <h2>let us bring you all our flavors to you. We offer full-service catering for every event</h2>
+        <h1>Contact Us</h1>
+        <h2>Please tell us what do you think about Monas. We Love feedback!</h2>
+        <h2>What can do for you or for our community?</h2>
       </div>
       <form className="feature-form" onSubmit={handleSubmit}>
       {/* <form className="feature-form" onSubmit={sendEmail}> */}
@@ -67,4 +67,4 @@ const Catering = () => {
   )
 }
 
-export default Catering
+export default Contact

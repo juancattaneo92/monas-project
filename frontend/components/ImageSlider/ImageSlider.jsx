@@ -53,7 +53,7 @@ const ImageSlider = ({slides}) => {
                                     <div className="caption-wrapper">
                                         <p data-aos="fade-down" data-aos-duration="600" className="hero-caption" >{slide.caption}</p>
                                         <p data-aos="fade-down" data-aos-duration="600"data-aos-delay="200" className="hero-info">{slide.info}</p>
-                                        <button data-aos='zoom-out' data-aos-duration='500'data-aos-delay="500" className="action-button">View Menu</button>
+                                        <button data-aos='zoom-out' data-aos-duration='500'data-aos-delay="500" className="action-button-a">View Menu</button>
                                     </div>
                                     <div className="hero-button-container">
                                         <div className="hero-button-wrapper">
