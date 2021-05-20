@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react'
 import {FaArrowCircleLeft} from "react-icons/fa"
 import { FaArrowCircleRight } from "react-icons/fa"
 import { motion, AnimatePresence } from "framer-motion"
+import {Link} from 'react-router-dom'
+
 
 
 const ImageSlider = ({slides}) => { 
@@ -53,7 +55,7 @@ const ImageSlider = ({slides}) => {
                                     <div className="caption-wrapper">
                                         <p data-aos="fade-down" data-aos-duration="600" className="hero-caption" >{slide.caption}</p>
                                         <p data-aos="fade-down" data-aos-duration="600"data-aos-delay="200" className="hero-info">{slide.info}</p>
-                                        <button data-aos='zoom-out' data-aos-duration='500'data-aos-delay="500" className="action-button-a">View Menu</button>
+                                        <Link to="/menu-items" ><button data-aos='zoom-out' data-aos-duration='500'data-aos-delay="500" className="action-button-a">View Menu</button></Link>
                                     </div>
                                     <div className="hero-button-container">
                                         <div className="hero-button-wrapper">

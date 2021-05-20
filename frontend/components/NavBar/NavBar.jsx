@@ -24,18 +24,13 @@ const NavBar = ({ currentUser, logout, openModal }) => {
     
     const logginIn = () => {
         return(
-            <div className="">
-                <button className="action-button-b" onClick={() => openModal('signin')}>Sign in</button>
-            </div>
+            <button className="action-button-b" onClick={() => openModal('signin')}>Sign in</button>
     )};
     
     const loggingOut = (currentUser, logout) => {
         return(
-            <div className="">
-                <div className="">
-                    <button className="action-button-b" onClick={logout}>Sign out</button>
-                </div>
-            </div>
+            <button className="action-button-b" onClick={logout}>Sign out</button>
+
     )};
 // 
         return (
