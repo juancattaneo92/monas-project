@@ -16,7 +16,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: transparent;
+  background-color: rgb(255 255 255 / 49%);
   /* color: #000000; */
   position: absolute;
   top: 0;
