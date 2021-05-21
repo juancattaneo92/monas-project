@@ -7,7 +7,39 @@
 }
 
 .m-t{
-  margin-top: 200px;
+  margin-top: 150px;
+}
+
+.menu-navBar-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: var(--functional-font);
+}
+.menu-navBar-container{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+
+.menu-category{
+  width: 60vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-single-category{
+  display: flex;
+}
+
+.menu-searchBar{
+  width: 20%;
+  height: 5vh;
 }
 
 .menu-index-section{

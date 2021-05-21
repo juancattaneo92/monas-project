@@ -127,10 +127,6 @@
     margin-right: 2rem;
   }
 }
-
-.nav-bar-container .nav-bar-left {
-  /* width: 33vw; */
-}
 a:-webkit-any-link {
   text-decoration: none;
   color: #f5f4f4;
