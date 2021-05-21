@@ -2,43 +2,46 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function MenuItemIndex() {
-  const [items, setItems] = useState([]);
+  const [fries, setFries] = useState([]);
+  const [burgers, setBurgers] = useState([]);
   const [category, setCategory] = useState([]);
 
-  const getItems = async () => {
-    const response = await fetch('api/menu_items')
+  const getFries = async () => {
+    const response = await fetch(`api/menu-items/fries`)
     const items = await response.json()
-    setItems(items)
+    setFries(items)
   }
 
-  const sortByCategories = () => {
-
+  const getBurgers = async () => {
+    const response = await fetch(`api/menu-items/burgers`)
+    const items = await response.json()
+    setBurgers(items)
   }
- 
-  useEffect(() => {
-    getItems()
+
+   useEffect(() => {
+    getBurgers()
   }, [])
 
-  const categories = ["Burgers", "Salads", "Starters", "Fries", "Un-Burgers", "Beverages", "Sides"]
+  useEffect(() => {
+    getFries()
+  }, [])
+
 
   return (
     <div className="menu-index">
-      <div className="menu-navBar-section">
-        <div className="menu-navBar-container">
-          <div className="menu-category">{categories.map(cat => {
-            return (
-              <Link key={cat} className="menu-single-category" >{cat}</Link>
-            )
-          })}
-          </div>
-          <input className="menu-searchBar" type="text" placeholder="What are you looking for?"></input>
-        </div>
-      </div>
       <section className="menu-index-section">
         <div className="menu-index-container">
           <div className="wrapper-menu-index">
-            
-            {items.map(item => {
+            {}
+            {fries.map(fry => {
+              return (
+                <div key={fry.id}>{fry.name}
+                {fry.photo}</div>
+              )
+            })}
+            {/* {burgers} */}
+            {/* {items.map(item => {
+                  console.log(item)
               return (
                 <ul className="menu-item-index" key={item.id}>
                   <img src={item.photo} alt=""/>
@@ -52,7 +55,7 @@ export default function MenuItemIndex() {
                   </div>
                 </ul>
               )
-            })}
+            })} */}
 
           </div>
           <div className="shopping-cart-index">
@@ -63,3 +66,20 @@ export default function MenuItemIndex() {
     </div>
   )
 }
+
+
+
+  // const categories = ["Burgers", "Salads", "Starters", "Fries", "Un-Burgers", "Beverages", "Sides"]
+
+        {/* <div className="menu-navBar-section">
+        <div className="menu-navBar-container">
+          <div className="menu-category">{categories.map(cat => {
+            return (
+              <div></div>
+              // <Link key={cat} className="menu-single-category" >{cat}</Link>
+            )
+          })}
+          </div>
+          <input className="menu-searchBar" type="text" placeholder="What are you looking for?"></input>
+        </div>
+      </div> */}

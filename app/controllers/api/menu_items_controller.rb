@@ -1,10 +1,38 @@
 class Api::MenuItemsController < ApplicationController
 
   def index
-    @menu_items = MenuItem.all
+    # debugger
+    if params[:category] == "burgers"
+      @menu_items = MenuItem.where({category: "burgers"})
+      render :index
+    elsif params[:category] == "salad"
+      @menu_items = MenuItem.where({category: "salad"})
+      render :index
+    elsif params[:category] == "starters"
+      @menu_items = MenuItem.where({category: "starters"})
+      render :index
+    elsif params[:category] == "fries"
+      @menu_items = MenuItem.where({category: "fries"})
+      render :index
+    elsif params[:category] == "un-burger"
+      @menu_items = MenuItem.where({category: "un-burger"})
+      render :index
+    elsif params[:category] == "beverage"
+      @menu_items = MenuItem.where({category: "beverage"})
+      render :index
+    elsif params[:category] == "milkshake"
+      @menu_items = MenuItem.where({category: "milkshake"})
+      render :index
+    else 
+      # debugger
+      @menu_items = MenuItem.all
+      render :index
+    end 
   end
 
+
   def show
+    # debugger
     @menu_item = MenuItem.find(params[:id])
     render :show
   end
