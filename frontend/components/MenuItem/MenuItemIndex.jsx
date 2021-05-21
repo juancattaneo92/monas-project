@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MenuItemIndex() {
   const [items, setItems] = useState([]);
@@ -21,12 +22,12 @@ export default function MenuItemIndex() {
   const categories = ["Burgers", "Salads", "Starters", "Fries", "Un-Burgers", "Beverages", "Sides"]
 
   return (
-    <div>
-      <div className="menu-navBar-section m-t">
+    <div className="menu-index">
+      <div className="menu-navBar-section">
         <div className="menu-navBar-container">
           <div className="menu-category">{categories.map(cat => {
             return (
-              <ul className="menu-single-category" >{cat}</ul>
+              <Link key={cat} className="menu-single-category" >{cat}</Link>
             )
           })}
           </div>
@@ -47,7 +48,7 @@ export default function MenuItemIndex() {
                       <li>$ {item.price}</li>
                     </div>
                     <li>{item.description}</li>
-                    <button className='action-button-a menu-items'>Take me Home</button>
+                    <button className='action-button-b menu-items'>Take me Home</button>
                   </div>
                 </ul>
               )
