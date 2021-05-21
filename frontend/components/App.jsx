@@ -12,7 +12,9 @@ import MenuItemIndex from "./MenuItem/MenuItemIndex"
 import Catering from "./Catering/Catering"
 import Contact from "./Contact/Contact"
 import Location from "./Location/Location"
+import Profile from "./Profile/Profile"
 import Footer from "./Footer/Footer"
+
 
 function App() {
 
@@ -40,6 +42,9 @@ function App() {
         </Route>
         <Route exact path="/locations">
           <Location />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
         </Route>
       </Switch>
       <Footer/>
