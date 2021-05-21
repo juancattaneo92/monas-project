@@ -14,6 +14,7 @@ import Contact from "./Contact/Contact"
 import Location from "./Location/Location"
 import Footer from "./Footer/Footer"
 
+
 function App() {
 
   useEffect(() => { 
@@ -29,10 +30,10 @@ function App() {
           <About />
           <Grassfed />
         </Route>
-        <Route exact path="/menu-items/burgers">
+        <Route exact path="/menu-items/:category">
           <MenuItemIndex />
         </Route>
-        <Route exact path="/menu-items/salad">
+        {/* <Route exact path="/menu-items/salad">
           <MenuItemIndex />
         </Route>
         <Route exact path="/menu-items/starters">
@@ -47,9 +48,12 @@ function App() {
         <Route exact path="/menu-items/beverage">
           <MenuItemIndex />
         </Route>
-        <Route exact path="/menu-items/milkshake">
+        <Route exact path="/menu-items/milkshakes">
           <MenuItemIndex />
-        </Route>
+        </Route> */}
+        {/* <Route exact path="/menu-items">
+          <MenuItemIndex />
+        </Route> */}
         <Route exact path="/catering">
           <Catering />
         </Route>

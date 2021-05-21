@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Category from '../Category/Category';
 
 export default function MenuItemIndex() {
   const [category, setCategory] = useState([]);
 
   const getCategory = async () => {
     const category = window.location.hash.split("/")[2]
+    console.log(category)
     const response = await fetch(`api/menu-items/${category}`)
     const items = await response.json()
     setCategory(items)
@@ -14,13 +16,18 @@ export default function MenuItemIndex() {
     getCategory()
   }, [])
 
-  return(
+return (
     <div className="menu-index">
+      <div className="menu-navBar-section">
+        <div className="menu-navBar-container">
+            {/* <Category /> */}
+          <input className="menu-searchBar" type="text" placeholder="What are you looking for?"></input>
+        </div>
+      </div>
       <section className="menu-index-section">
         <div className="menu-index-container">
           <div className="wrapper-menu-index">
             {category.map(item => {
-                  console.log(item)
               return (
                 <ul className="menu-item-index" key={item.id}>
                   <img src={item.photo} alt=""/>
@@ -34,15 +41,14 @@ export default function MenuItemIndex() {
                   </div>
                 </ul>
               )
-            })} 
-
+            })}
           </div>
           <div className="shopping-cart-index">
             <h1 className="current-order-title">Ready To Order?</h1>
           </div> 
         </div>
       </section>
-  </div>
+    </div>
   )
 }
 
