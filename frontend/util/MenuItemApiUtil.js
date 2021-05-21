@@ -1,6 +1,6 @@
-export const fetchMenuItems = () => {
+export const fetchMenuItems = (category) => {
   return $.ajax({
-    url: 'api/menu_items',
+    url: `api/menu_items/${category}`,
     method: 'GET',
   })
 }
