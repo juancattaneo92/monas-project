@@ -4,58 +4,34 @@ import Category from '../Category/Category';
 
 export default function MenuItemIndex() {
   const [items, setItems] = useState([]);
-  // const [category, setCategory] = useState("")
+  // const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true)
-
-
-  // Message:
-  // This is not ready!!! the url is fixed but once I add dependency [items] 
-  // it updates the request (component did update) however, we fall into a 
-  // infinity loop. We need a cleanup, a return with a call back into the return 
-  // inside the useEffect. However we get a push history issue because we are 
-  // getting categories from the same url in theory (api/menu-items)
-  //(Warning: Hash history cannot PUSH the same path; a new entry will not be added to the history stack)
-  // If we hit the buttons for burgers or salads ..etc it doesnt go, only goes 
-  // if we refresh the page. 
-  // What we need to do is find another way to get the categories
-  // I was trying to get categories from line 7 and 21 to 28, however I cant
-  // get the current category 
-
-
-  // const getCategory = async () => {
-  //   const response = await fetch('api/menu_items')
-  //   const category = await response.json()
-  //   let categories = category.filter( (product) => {
-  //     return product.category
-  //   })
-  //   setCategory(category)
-  //   console.log(categories)
-  // }
+  // const [query, setQuery] = useState(`window.location.hash.split("/")[2]`);
  
   const getItems = async () => {
     const category = window.location.hash.split("/")[2]
-    console.log(category)
-
     const response = await fetch(`api/menu-items/${category}`)
     const items = await response.json()
     setItems(items)
-    console.log(items)
+    // const categories = items.map((cat) => {return cat.category})
+    // console.log(categories)
   }
+
   useEffect(() => {
     let mounted = true
-    console.log("useEffect")
-    // getCategory()
     getItems()
-    .then(()=> {
-      if(mounted){
-        setLoading(false)
-      }
-    })
+      .then(()=> {
+        if(mounted){
+          setLoading(false)
+        }
+      })
     return () => {
       mounted = false
     }
-  }, [])
-console.log("render")
+  },[])
+  // },[])
+
+// console.log("render")
 
 return (
   <div>
