@@ -32,15 +32,15 @@ export default function MenuItemIndex() {
       <section className="menu-index-section">
         <div className="menu-index-container">
           <div className="wrapper-menu-index">
-            {}
+            {/* {}
             {fries.map(fry => {
               return (
                 <div key={fry.id}>{fry.name}
                 {fry.photo}</div>
               )
-            })}
+            })} */}
             {/* {burgers} */}
-            {/* {items.map(item => {
+            {burgers.map(item => {
                   console.log(item)
               return (
                 <ul className="menu-item-index" key={item.id}>
@@ -55,7 +55,7 @@ export default function MenuItemIndex() {
                   </div>
                 </ul>
               )
-            })} */}
+            })}
 
           </div>
           <div className="shopping-cart-index">
@@ -71,15 +71,15 @@ export default function MenuItemIndex() {
 
   // const categories = ["Burgers", "Salads", "Starters", "Fries", "Un-Burgers", "Beverages", "Sides"]
 
-        {/* <div className="menu-navBar-section">
-        <div className="menu-navBar-container">
-          <div className="menu-category">{categories.map(cat => {
-            return (
-              <div></div>
-              // <Link key={cat} className="menu-single-category" >{cat}</Link>
-            )
-          })}
-          </div>
-          <input className="menu-searchBar" type="text" placeholder="What are you looking for?"></input>
-        </div>
-      </div> */}
+  //       { <div className="menu-navBar-section">
+  //       <div className="menu-navBar-container">
+  //         <div className="menu-category">{categories.map(cat => {
+  //           return (
+  //             <div></div>
+  //             <Link key={cat} className="menu-single-category" >{cat}</Link>
+  //           )
+  //         })}
+  //         </div>
+  //         <input className="menu-searchBar" type="text" placeholder="What are you looking for?"></input>
+  //       </div>
+  //     </div> }
