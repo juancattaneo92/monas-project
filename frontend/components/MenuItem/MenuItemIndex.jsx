@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Category from '../Category/Category'
+
 
 export default function MenuItemIndex() {
-  const [fries, setFries] = useState([]);
+  // const [fries, setFries] = useState([]);
   const [burgers, setBurgers] = useState([]);
-  const [category, setCategory] = useState([]);
+  // const [category, setCategory] = useState([]);
 
-  const getFries = async () => {
-    const response = await fetch(`api/menu-items/fries`)
-    const items = await response.json()
-    setFries(items)
-  }
+  // const getFries = async () => {
+  //   const response = await fetch(`api/menu-items/fries`)
+  //   const items = await response.json()
+  //   setFries(items)
+  // }
 
   const getBurgers = async () => {
     const response = await fetch(`api/menu-items/burgers`)
@@ -22,13 +24,14 @@ export default function MenuItemIndex() {
     getBurgers()
   }, [])
 
-  useEffect(() => {
-    getFries()
-  }, [])
+  // useEffect(() => {
+  //   getFries()
+  // }, [])
 
 
   return (
     <div className="menu-index">
+          <Category />
       <section className="menu-index-section">
         <div className="menu-index-container">
           <div className="wrapper-menu-index">
