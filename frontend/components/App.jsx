@@ -38,27 +38,10 @@ function App() {
           <About />
           <Grassfed />
         </Route>
-        <Route exact path="/menu-items/burgers">
-          <BurgersIndex />
+        <Route exact path="/menu-items/:category">
+          <MenuItemIndex />
         </Route>
-        <Route exact path="/menu-items/salad">
-          <SaladsIndex />
-        </Route>
-        <Route exact path="/menu-items/starters">
-          <StartersIndex />
-        </Route>
-        <Route exact path="/menu-items/fries">
-          <FriesIndex />
-        </Route>
-        <Route exact path="/menu-items/un-burger">
-          <UnburgersIndex />
-        </Route>
-        <Route exact path="/menu-items/beverage">
-          <BeverageIndex />
-        </Route>
-        <Route exact path="/menu-items/milkshake">
-          <MilkshakeIndex />
-        </Route>
+      
         <Route exact path="/catering">
           <Catering />
         </Route>

@@ -1,60 +1,44 @@
-import React, {useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import { Link, useHistory } from 'react-router-dom'
 
-export const Category = () => {
-  // const [items, setItems] = useState([]);
-  // const [category, setCategory] = useState([]);
-  // // const categories = ["Burgers", "Salads", "Starters", "Fries", "Un-Burgers", "Beverages", "Sides"]
+export const Category = ( props ) => {
+  // const [category, setCategory] = useState("")
+  let category = window.location.hash.split("/")[2]
+  let setCategory = props.setCategory
+  const history = useHistory()
+  
+  const getCategories = () => {
+    // let category = props.category
+    setCategory(category)
+    // console.log(category)
+  }
+  useEffect(()=>{    
+    // console.log(category)
+    let mounted = true
+    getCategories()
+    if(mounted){
+      setCategory(category)
+          }
+     return () => {
+        mounted = false
+      }
+  },[category])
 
-  //   const getItems = async () => {
-  //     const response = await fetch('api/menu_items')
-  //     const items = await response.json()
-  //     setItems(items)
-  // }
-
-  //   useEffect(() => {
-      
-  // }, [])
-
-
-  // useEffect(() => {
-  //   const fetchProduct = async () => {
-  //     const {data} = await axios.get('/api/products/random-lucky-box')
-
-  //     setProduct(data)
-  //   }
-
-  //   fetchProduct()
-  // }, [])
-
-  // useEffect(() => {
-  //   const fetchCategory = async () => {
-  //     const {data} = await axios.get(`/api/categories/${product.catId}`)
-
-  //     setCategory(data)
-  //   }
-
-  //   fetchCategory()
-  // }, [])
+  function handleClick(e){
+    let cat = e.target.id
+    setCategory(cat)
+    history.push(`/menu-items/${cat}`)
+  }
 
   return (
-    // <div>
-    //     <Link onClick={() => this.setCategory("burgers")} to="/burgers" className="category">Burgers</Link>
-    //     <Link onClick={() => this.setCategory("salad")} to="/salad" className="category">Salads</Link>
-    //     <Link onClick={() => this.setCategory("starters")} to="/starters" className="category">Starters</Link>
-    //     <Link onClick={() => this.setCategory("fries")} to="/fries" className="category">Fries</Link>
-    //     <Link onClick={() => this.setCategory("un-burger")} to="/un-burger" className="category">Un-Burgers</Link>
-    //     <Link onClick={() => this.setCategory("beverage")} to="/beverage" className="category">Beverages</Link>
-    //     <Link onClick={() => this.setCategory("milkshake")} to="/milkshake" className="category">Milkshakes</Link>  
-    // </div>
-    <div className="category-wrapper">
-        <Link  to="/menu-items/burgers" className="category">Burgers</Link>
-        <Link  to="/menu-items/fries" className="category">Fries</Link>
-        <Link to="/menu-items/salad" className="category">Salads</Link>
-        <Link to="/menu-items/starters" className="category">Starters</Link>
-        <Link to="/menu-items/un-burger" className="category">Un-Burgers</Link>
-        <Link to="/menu-items/beverage" className="category">Beverages</Link>
-        <Link to="/menu-items/milkshake" className="category">Milkshakes</Link>
+    <div className="menu-category">
+            <button onClick={handleClick} className="menu-single-category" id="burgers" >Burgers</button>
+            <button onClick={handleClick} className="menu-single-category" id="salad" >Salads</button>
+            <button onClick={handleClick} className="menu-single-category" id="starters" >Starters</button>
+            <button onClick={handleClick} className="menu-single-category" id="fries" >Fries</button>
+            <button onClick={handleClick} className="menu-single-category" id="beverage" >Beverages</button>
+            <button onClick={handleClick} className="menu-single-category" id="milshake" >Milshakes</button>
+            <button onClick={handleClick} className="menu-single-category" id="un-burger" >Un-Burgers</button> 
     </div>
   )
 }

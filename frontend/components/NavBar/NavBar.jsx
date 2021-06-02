@@ -32,7 +32,6 @@ const NavBar = ({ currentUser, logout, openModal }) => {
             <button className="action-button-b" onClick={logout}>Sign out</button>
 
     )};
-// 
         return (
             <nav className="nav-bar-container">
                 <div className="nav-bar-left">
