@@ -4,6 +4,6 @@
         json.menuItemId cart_item.menu_item_id
         json.cartItemId cart_item.id
         json.extract! cart_item.menu_item, :name, :size, :id, :price
-        json.photoUrls cart_item.menu_item.photo
+        json.photoUrl cart_item.menu_item.photo
     end
 end
