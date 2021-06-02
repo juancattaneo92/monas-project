@@ -6,6 +6,9 @@ Rails.application.routes.draw do
     resources :users, only:[:show, :create, :update]
     resources :addresses, only: [:show, :create, :update, :destroy]
     resources :menu_items, only: [:index, :show]
+    resources :cart_items, only:[:create, :destroy, :index, :show] do 
+      resources :menu_items, only:[:show, :index]
+    end 
 
     get 'menu-items/:category', :to => 'menu_items#index'
   end 
