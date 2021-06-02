@@ -32,7 +32,6 @@ const NavBar = ({ currentUser, logout, openModal }) => {
             <button className="action-button-b" onClick={logout}>Sign out</button>
 
     )};
-// 
         return (
             <nav className="nav-bar-container">
                 <div className="nav-bar-left">
@@ -40,7 +39,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                     <Link to='/' className="logo-text">Mona's Burgers</Link>
                 </div>
                 <div className="nav-links-container">
-                    <Link to="menu-items/burgers" className="nav-links" >Order Now</Link>
+                    <Link to="/menu-items/burgers" className="nav-links" >Order Now</Link>
                     <Link to='/catering' className="nav-links">Catering</Link>
                     <Link to='/locations' className="nav-links">Locations</Link>
                     <Link to='/contact' className="nav-links">Contact Us</Link>

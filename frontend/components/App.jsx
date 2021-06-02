@@ -8,10 +8,18 @@ import AOS from "aos"
 import Hero from "./Hero/Hero"
 import Modal from "./Modal/Modal"
 import About from "./About/About"
-import MenuItemIndex from "./MenuItem/MenuItemIndex"
+// import MenuItemIndex from "./MenuItem/MenuItemIndex"
+import BurgersIndex from "./MenuItem/BurgersIndex"
+import FriesIndex from "./MenuItem/FriesIndex"
+import SaladsIndex from "./MenuItem/SaladsIndex"
+import StartersIndex from "./MenuItem/StartersIndex"
+import UnburgersIndex from "./MenuItem/UnburgersIndex"
+import BeverageIndex from "./MenuItem/BeverageIndex"
+import MilkshakeIndex from "./MenuItem/MilkshakeIndex"
 import Catering from "./Catering/Catering"
 import Contact from "./Contact/Contact"
 import Location from "./Location/Location"
+import Profile from "./Profile/Profile"
 import Footer from "./Footer/Footer"
 
 
@@ -33,27 +41,7 @@ function App() {
         <Route exact path="/menu-items/:category">
           <MenuItemIndex />
         </Route>
-        {/* <Route exact path="/menu-items/salad">
-          <MenuItemIndex />
-        </Route>
-        <Route exact path="/menu-items/starters">
-          <MenuItemIndex />
-        </Route>
-        <Route exact path="/menu-items/fries">
-          <MenuItemIndex />
-        </Route>
-        <Route exact path="/menu-items/un-burger">
-          <MenuItemIndex />
-        </Route>
-        <Route exact path="/menu-items/beverage">
-          <MenuItemIndex />
-        </Route>
-        <Route exact path="/menu-items/milkshakes">
-          <MenuItemIndex />
-        </Route>
-        <Route exact path="/menu-items/burgers">
-          <MenuItemIndex />
-        </Route> */}
+      
         <Route exact path="/catering">
           <Catering />
         </Route>
@@ -62,6 +50,9 @@ function App() {
         </Route>
         <Route exact path="/locations">
           <Location />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
         </Route>
       </Switch>
       <Footer/>
