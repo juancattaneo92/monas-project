@@ -7,6 +7,11 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     class_name: :Address
 
+    has_many :cart_items,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :CartItem
+
   attr_reader :password
   before_validation :ensure_session_token
 
