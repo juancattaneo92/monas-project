@@ -47,7 +47,7 @@ export const Category = () => {
     //     <Link onClick={() => this.setCategory("beverage")} to="/beverage" className="category">Beverages</Link>
     //     <Link onClick={() => this.setCategory("milkshake")} to="/milkshake" className="category">Milkshakes</Link>  
     // </div>
-    <div>
+    <div className="category-wrapper">
         <Link  to="/menu-items/burgers" className="category">Burgers</Link>
         <Link  to="/menu-items/fries" className="category">Fries</Link>
         <Link to="/menu-items/salad" className="category">Salads</Link>

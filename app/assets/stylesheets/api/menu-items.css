@@ -31,6 +31,23 @@
   margin: 1em;
 }
 
+.category-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  font-size: 20px;
+}
+
+.category{
+  align-self: center;
+}
+
+.category:hover{
+  color: rgb(245, 151, 27)
+}
+
+
+
 .menu-category{
   width: 60vw;
   display:flex;
