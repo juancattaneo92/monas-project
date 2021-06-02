@@ -50,8 +50,8 @@ function App() {
         </Route>
         <Route exact path="/menu-items/milkshakes">
           <MenuItemIndex />
-        </Route> */}
-        {/* <Route exact path="/menu-items">
+        </Route>
+        <Route exact path="/menu-items/burgers">
           <MenuItemIndex />
         </Route> */}
         <Route exact path="/catering">

@@ -2,36 +2,81 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Category from '../Category/Category';
 
-export default function MenuItemIndex() {
+const MenuItemIndex = () =>  {
   const [items, setItems] = useState([]);
-  // const [categories, setCategories] = useState([]);
+  const [error, setError] = useState("Error");
   const [loading, setLoading] = useState(true)
-  // const [query, setQuery] = useState(`window.location.hash.split("/")[2]`);
- 
-  const getItems = async () => {
-    const category = window.location.hash.split("/")[2]
-    const response = await fetch(`api/menu-items/${category}`)
-    const items = await response.json()
-    setItems(items)
-    // const categories = items.map((cat) => {return cat.category})
-    // console.log(categories)
-  }
+  const [category, setCategory] = useState(`${window.location.hash.split("/")[2]}`)
+  const [oldCategory, setOldCategory] = useState(`${window.location.hash.split("/")[2]}`)
 
-  useEffect(() => {
-    let mounted = true
-    getItems()
-      .then(()=> {
-        if(mounted){
-          setLoading(false)
-        }
-      })
-    return () => {
-      mounted = false
+  useEffect(() => {  
+    if((oldCategory !== category) || (items.length === 0)){
+      setOldCategory(category)
+      let mounted = true
+      fetch(`api/menu-items/${category}`)
+        .then(res => res.json())
+        .then( (items) => {
+          if(mounted) {
+            setItems(items)
+            setLoading(false) 
+          }
+        })
+        .catch(error => {
+          setError(error)
+          console.log(error)})
+        
+      return () => {
+        mounted = false
+      }
     }
-  },[])
-  // },[])
+  }, [items, category])
+  // }, []) 
 
-// console.log("render")
+// Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+
+
+  // const getItems = async() => {
+  //   const category = window.location.hash.split("/")[2]
+  //   const response = await fetch(`api/menu-items/${category}`)
+  //   const items = await response.json()
+  //   setItems(items)
+  // }
+  
+  // useEffect(() => {  
+  //   let mounted = true
+  //     getItems()
+  //       if(mounted) {
+  //         getItems()
+  //         setLoading(false) 
+  //       }
+  //   return () => mounted = false
+  // }, [])
+
+
+
+// useEffect(() => {
+//         let ignore = false;
+//         const timeout = setTimeout(() => {
+//             const fetchData = async () => {
+//                 try {
+//                     setLoading(true);
+//                     setError({});
+//                     const response = await getItems();
+//                     if (!ignore) setItems(response['data']);
+//                 } catch (err) {
+//                     setError(err);
+//                 }
+//                 setLoading(false);
+//             };
+//             fetchData();
+//         });
+//         return () => {
+//             ignore = true;
+//             clearTimeout(timeout);
+//         };
+//     }, [items]);
+
+
 
 return (
   <div>
@@ -40,7 +85,7 @@ return (
 
      <div className="menu-navBar-section">
         <div className="menu-navBar-container">
-            <Category />
+            <Category category={category} setCategory={setCategory} />
           <input className="menu-searchBar" type="text" placeholder="What are you looking for?"></input>
         </div>
       </div>
@@ -73,7 +118,7 @@ return (
   )
 }
 
-  
+export default MenuItemIndex;
 
 //   return (
 //     <div className="menu-index">
