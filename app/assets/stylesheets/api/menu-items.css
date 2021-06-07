@@ -87,8 +87,11 @@
   display: flex;
 }
 .wrapper-menu-index{
-    width: 70%;
+    margin-left: 5rem;
+    width: 55%;
 }
+
+
 
 .shopping-cart-index{
   width: 30%;
