@@ -7,12 +7,6 @@ const SliderData = [
     alt: "Mona's Burger",
   },
   {
-    imageUrl: window.hero_4_url,
-    caption: "Salads",
-    info: "Fresh Ingredients",
-    alt: "Salad"
-  },
-  {
     imageUrl: window.hero_8_url,
     caption: "Milkshakes",
     info: "Hand Made",
@@ -23,6 +17,12 @@ const SliderData = [
     caption: "Un-Burgers",
     info: "Sandwiches, Locally Sourced",
     alt: "Sandwiches",
+  },
+  {
+    imageUrl: window.hero_4_url,
+    caption: "Salads",
+    info: "Fresh Ingredients",
+    alt: "Salad"
   },
 ];
 console.log("Trying to read image urls");
