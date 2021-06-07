@@ -37,7 +37,7 @@ export const Category = ( props ) => {
             <button onClick={handleClick} className="menu-single-category" id="starters" >Starters</button>
             <button onClick={handleClick} className="menu-single-category" id="fries" >Fries</button>
             <button onClick={handleClick} className="menu-single-category" id="beverage" >Beverages</button>
-            <button onClick={handleClick} className="menu-single-category" id="milshake" >Milshakes</button>
+            <button onClick={handleClick} className="menu-single-category" id="milkshake" >Milshakes</button>
             <button onClick={handleClick} className="menu-single-category" id="un-burger" >Un-Burgers</button> 
     </div>
   )
