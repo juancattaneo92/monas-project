@@ -57,6 +57,17 @@
 
 .menu-single-category{
   display: flex;
+  background: none;
+	color: whitesmoke;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.menu-single-category:hover{
+  color: rgb(245, 151, 27);
 }
 
 .menu-searchBar{
@@ -106,6 +117,7 @@
 
 .menu-details{
   line-height: 1.2rem;
+  margin-left: 1rem;
   /* margin: 1rem, 0rem, 1rem, 0rem; */
   color: whitesmoke;
 }
