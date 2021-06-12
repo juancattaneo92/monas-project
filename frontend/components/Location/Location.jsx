@@ -90,6 +90,7 @@ const Location = () => {
             Sunday
             11:00 am – 8:00 pm
             *Hours are 1/2 hour longer during Spring & Summer months
+
           </div>
       </div>
     </div>
